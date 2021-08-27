@@ -13,15 +13,11 @@
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="progress.css">
+  <link rel="stylesheet" href="join-prize.css">
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- Bootstrap core JavaScript -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
-    section {
-      min-height: 100vh;
-      width: 100%;
-      color: #FFFFFF;
-    }
     @font-face {
       font-family: "gotham-medium";
       src: url('asset/gotham/Gotham-Medium.ttf');
@@ -33,6 +29,11 @@
     @font-face {
       font-family: "gotham-light";
       src: url('/asset/gotham/Gotham-Light.ttf');
+    }
+    section {
+      min-height: 100vh;
+      width: 100%;
+      color: #FFFFFF;
     }
   </style>
 
@@ -116,10 +117,54 @@
     </div>
     
   </section>
+  <!-- Join Prize -->
+  <section id="join-prize" class="join-prize-section" style="background-image: url(asset/main-join-prize-bg.png);">
+    <div class="join-prize-container">
+      <div class="join-prize-title">
+        JOIN TO UNLOCK<br>THE PRIZES
+      </div>
+      <p class="join-prize-desc">
+        Do you want more valuable prizes to be in<br>
+        the lucky draw pool? Share this challenge to<br>
+        your friends and family members, get them to<br>
+        join our Jump For Happiness and unlock<br>
+        more prize now!
+      </p>
+      <div class="join-prize-items">
+        <div class="row" width="120%">
+          <div class="prize-one col-3">
+            <img style="width: 100%;" src="asset/main-join-prize-img-1.png" alt="1-499-participants-price">
+          </div>
+          <div class="prize-one col-3">
+            <img style="width: 100%;" src="asset/main-join-prize-img-2.png" alt="500-participants-price">
+          </div>
+          <div class="prize-one col-3">
+            <img style="width: 100%;" src="asset/main-join-prize-img-3.png" alt="1000-participants-price">
+          </div>
+          <div class="prize-one col-3">
+            <img style="width: 100%;" src="asset/main-join-prize-img-4.png" alt="1500-participants-price">
+          </div>
+          <div class="prize-name col-3">1 - 499<br>Participants</div>
+          <div class="prize-name col-3">500<br>Participants</div>
+          <div class="prize-name col-3">1000<br>Participants</div>
+          <div class="prize-name col-3">1500<br>Participants</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
   <script>
-    
+    gsap.to(".bar", {
+      xPercent: 900,
+      ease: "none",
+      scrollTrigger: {
+        scroller: ".wrap",
+        horizontal: true,
+        scrub: true
+      }
+    })
   </script>
 </body>
 
