@@ -1,0 +1,89 @@
+.progress-banner {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  padding-bottom: 140px;
+}
+
+.main-banner-title {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.progress-desc {
+  width: 90%;
+  margin: auto;
+  margin-top: 16px;
+  font-family: "gotham-medium", sans-serif;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.progress-bird {
+  width: 140px;
+  position: relative;
+  margin: 40px auto 0;
+}
+
+.progress-bird img {
+  width: 100%;
+}
+
+.progress-bird_amount {
+  position: absolute;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.progress-bird_amount .value {
+  font-family: "gotham-bold", sans-serif;
+  font-size: 16px;
+}
+
+.progress-bird_amount .jumps {
+  font-family: "gotham-medium", sans-serif;
+  font-size: 12px;
+}
+
+.progress-bird_amount .title {
+  font-family: "gotham-light", sans-serif;
+  font-size: 12px;
+  margin-top: -4px;
+}
+
+.progress-bird_amount.left {
+  left: -55%;
+  bottom: 20px;
+}
+
+.progress-bird_amount.right {
+  right: -55%;
+  bottom: 20px;
+}
+
+.progressing-bar {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+.progressing-bar img {
+  width: 100%;
+}
+
+.progressing-bar .amount {
+  font-family: "gotham-light", sans-serif;
+  font-size: 8px;
+  color: #FFFFFF;
+  margin: 4px 20px;
+}
+
+.progress-infographic {
+  width: 90%;
+  margin: 20px auto;
+}

@@ -1,0 +1,22 @@
+.nav-wrapper {
+  width: 100%;
+  background-color: #99C442;
+}
+
+.nav-company-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-company-logo .logo {
+ /* height: 50px; */
+ width: 35px;
+ padding: 10px;
+ box-sizing: content-box;
+}
+
+.nav-wrapper img {
+  width: 100%;
+}
