@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="amazing-jumper.css">
   <link rel="stylesheet" href="result-submission-leaderboard.css">
   <link rel="stylesheet" href="step-participate.css">
+  <link rel="stylesheet" href="main-register.css">
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <!-- Bootstrap core JavaScript -->
@@ -403,7 +404,8 @@
           <img src="asset/mian-step-participate-3.png" alt="step-3">
         </div>
         <div class="step-item__desc">
-          Start jumping anytime,<br>anywhere with any skip-<br>ping apps(YaoYao,<br>Jump,etc) from 1 Sep - 30<br>Sep 2021.
+          Start jumping anytime,<br>anywhere with any skip-<br>ping apps(YaoYao,<br>Jump,etc) from 1 Sep - 30<br>Sep
+          2021.
         </div>
       </div>
       <div class="step-item col-sm-12">
@@ -414,7 +416,8 @@
           <img src="asset/mian-step-participate-4.png" alt="step-4">
         </div>
         <div class="step-item__desc">
-          Screenshot the result from<br>your skipping app submit it<br>with your ticket number<br>and total jump counts via<br>our landing page.
+          Screenshot the result from<br>your skipping app submit it<br>with your ticket number<br>and total jump counts
+          via<br>our landing page.
         </div>
       </div>
       <div class="step-item col-sm-12">
@@ -425,7 +428,9 @@
           <img src="asset/mian-step-participate-5.png" alt="step-5">
         </div>
         <div class="step-item__desc">
-          Post the most insta-worthy<br>shot on Facebook and<br>Instagram with ticket no. in<br>the caption with following<br>hashtag #SereniaCityAiora<br>#JumpForHappiness to<br>take part in the lucky draw.<br>Remember to set your<br>post to public.
+          Post the most insta-worthy<br>shot on Facebook and<br>Instagram with ticket no. in<br>the caption with
+          following<br>hashtag #SereniaCityAiora<br>#JumpForHappiness to<br>take part in the lucky draw.<br>Remember to
+          set your<br>post to public.
         </div>
       </div>
       <div class="step-item col-sm-12">
@@ -440,7 +445,31 @@
         </div>
       </div>
     </div>
-    
+  </section>
+
+  <!-- Register -->
+  <section id="register" class="register-section" style="background-image: url(asset/main-register-bg.png);">
+    <div class="section-title">
+      REGISTER NOW!
+    </div>
+    <div class="register-form-wrapper">
+      <form id="register" action="" method="post">
+        <label>Name</label>
+        <input type="text" tabindex="1" required autofocus>
+        <label>Email Address</label>
+        <input type="email" tabindex="2" required>
+        <label>Mobile Number</label>
+        <input type="tel" tabindex="3" required>
+        <div class="register-tnc-container d-flex align-items-start">
+          <input type="checkbox" id="tnc">
+          <label for="tnc" class="tnc-checkbox-label">I have read and aggreed to abide by the Terms & Conditions of the
+            Jump For Happiness 2021 event.</label>
+        </div>
+        <div class="register-button">
+          <button name="submit" type="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
   </section>
 
 
@@ -458,55 +487,32 @@
     document.getElementById("challange-primary-button").focus();
     toggleMainChallangeSelect('main-challange-primary-desc')
 
-    //  set --n (used for calc in CSS) via JS, after getting
-    // .container and the number of child images it holds:
-
     const _C = document.querySelector(".slider-container"),
       N = _C.children.length;
 
 
 
     _C.style.setProperty("--n", N);
-
-    // detect the direction of the motion between "touchstart" (or "mousedown") event
-    // and the "touched" (or "mouseup") event
-    // and then update --i (current slide) accordingly
-    // and move the container so that the next image in the desired direction moves into the viewport
-
-    // on "mousedown"/"touchstart", lock x-coordiate
-    // and store it into an initial coordinate variable x0:
     let x0 = null;
     let locked = false;
 
     function lock(e) {
       x0 = unify(e).clientX;
-      // remove .smooth class
       _C.classList.toggle("smooth", !(locked = true));
     }
 
-    // next, make the images move when the user swipes:
-    // was the lock action performed aka is x0 set?
-    // if so, read current x coordiante and compare it to x0
-    // from the difference between these two determine what to do next
+    let i = 0;
+    let w;
 
-    let i = 0; // counter
-    let w; //image width
-
-    // update image width w on resive
     function size() {
       w = window.innerWidth;
     }
 
     function move(e) {
       if (locked) {
-        // set threshold of 20% (if less, do not drag to the next image)
-        // dx = number of pixels the user dragged
         let dx = unify(e).clientX - x0,
           s = Math.sign(dx),
           f = +(s * dx / w).toFixed(2);
-
-        // Math.sign(dx) returns 1 or -1
-        // depending on this, the slider goes backwards or forwards
 
         if ((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > 0.2) {
           _C.style.setProperty("--i", (i -= s));
@@ -524,10 +530,6 @@
 
     addEventListener("resize", size, false);
 
-    // ===============
-    // drag-animation for the slider when it reaches the end
-    // ===============
-
     function drag(e) {
       e.preventDefault();
 
@@ -535,31 +537,20 @@
         _C.style.setProperty("--tx", `${Math.round(unify(e).clientX - x0)}px`);
       }
     }
-
-    // ===============
-    // prev, next
-    // ===============
     let prev = document.querySelector(".prev");
     let next = document.querySelector(".next");
 
     prev.addEventListener("click", () => {
       if (i == 0) {} else if (i > 0) {
-        // decrease i as long as it is bigger than the number of slides
         _C.style.setProperty("--i", i--);
-
       }
     });
 
     next.addEventListener("click", () => {
       if (i < N) {
-        // increase i as long as it's smaller than the number of slides
         _C.style.setProperty("--i", i++);
       }
     });
-
-    // ===============
-    // slider event listeners for mouse and touch (start, move, end)
-    // ===============
 
     _C.addEventListener("mousemove", drag, false);
     _C.addEventListener("touchmove", drag, false);
@@ -569,8 +560,6 @@
 
     _C.addEventListener("mouseup", move, false);
     _C.addEventListener("touchend", move, false);
-
-    // override Edge swipe behaviour
     _C.addEventListener(
       "touchmove",
       e => {
@@ -579,7 +568,6 @@
       false
     );
 
-    // unify touch and click cases:
     function unify(e) {
       return e.changedTouches ? e.changedTouches[0] : e;
     }
