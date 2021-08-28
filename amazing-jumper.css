@@ -1,0 +1,41 @@
+.amazing-jumper-section {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  min-height: 1000px;
+  padding-bottom: 50px;
+  padding-top: 120px;
+  transform: translateY(-120px);
+
+}
+
+.amazing-jumper-title {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-top: 40px;
+}
+
+.amazing-jumper-desc {
+  margin: auto;
+  margin-top: 20px;
+  font-family: "gotham-medium", sans-serif;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 16px;
+}
+
+.main-challange-button-items {
+  overflow-x: auto;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.main-challange-button-items .row {
+  width: 160%;
+}
