@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="join-prize.css">
   <link rel="stylesheet" href="challange.css">
   <link rel="stylesheet" href="amazing-jumper.css">
+  <link rel="stylesheet" href="result-submission-leaderboard.css">
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <!-- Bootstrap core JavaScript -->
@@ -46,6 +47,34 @@
       width: 100%;
       color: #FFFFFF;
       font-family: "gotham-medium", sans-serif;
+    }
+
+    .section-title {
+      font-family: 'Philosopher', sans-serif;
+      text-align: center;
+      color: #5A4A42;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 26px;
+    }
+
+    .section-title.white {
+      color: #FFFFFF;
+    }
+
+    .section-desc {
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+      font-family: "gotham-medium", sans-serif;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #5A4A42;
+      font-size: 14px;
+    }
+
+    .section-desc.white {
+      color: #FFFFFF;
     }
   </style>
 
@@ -82,10 +111,10 @@
   </section>
   <!-- Progress -->
   <section id="description" class="progress-banner" style="background-image: url(asset/main-progress-bg.png);">
-    <div class="main-banner-title">
+    <div class="section-title white">
       PROGRESS
     </div>
-    <p class="progress-desc">
+    <p class="section-desc white">
       It's time to throw your stresses away<br>
       and jump for your happiness! It<br>
       doesn't matter if you are young or<br>
@@ -133,10 +162,10 @@
   <!-- Join Prize -->
   <section id="join-prize" class="join-prize-section" style="background-image: url(asset/main-join-prize-bg.png);">
     <div class="join-prize-container">
-      <div class="join-prize-title">
+      <div class="section-title join-prize-title">
         JOIN TO UNLOCK<br>THE PRIZES
       </div>
-      <p class="join-prize-desc">
+      <p class="section-desc">
         Do you want more valuable prizes to be in<br>
         the lucky draw pool? Share this challenge to<br>
         your friends and family members, get them to<br>
@@ -169,7 +198,7 @@
   <!-- Main Challange -->
   <section id="main-challange" class="main-challange-section"
     style="background-image: url(asset/main-challange-bg.png);">
-    <div class="main-challange-title">
+    <div class="section-title main-challange-title">
       MAIN CHALLANGE
     </div>
     <p class="main-challange-desc">
@@ -236,10 +265,10 @@
   <!-- Mini Challange -->
   <section id="mini-challange" class="mini-challange-section"
     style="background-image: url(asset/mini-challenge-bg.png);">
-    <div class="mini-challange-title">
+    <div class="section-title mini-challange-title">
       MINI CHALLANGE
     </div>
-    <p class="main-challange-desc">
+    <p class="section-desc">
       Experience the thrill of our challanges and<br>
       receive a specially designed e-cert for in<br>
       recognition of your stellar achievement!
@@ -293,10 +322,45 @@
       jumps and won ur special prizes!
     </p>
 
-    <div class="main-challange-button-items">
+    <div class="amazing-jumper-button-items">
       <div class="row flex-nowrap" width="120%">
         <img src="asset/main-amazing-jumper-bg-place-holde.png" alt="amazing-jumper">
       </div>
+    </div>
+  </section>
+
+  <!-- Result Submit & Leaderboard -->
+  <section id="result-submit-leaderboard submit" class="result-submit-leaderboard-section"
+    style="background-image: url(asset/main-result-submit-leaderboard-bg.png);">
+    <div class="section-title">
+      RESULT SUBMISSION
+    </div>
+    <p class="section-desc">
+      You are allowed to accumulate your jump<br>
+      Counts using your skipping app within<br>
+      The challenge period.
+      <br><br>
+      Main Challenge: Only one result<br>
+      Submission is permissible.
+      <br><br>
+      Mini Challenge: Multiple result<br>
+      Submissions are permissible.ß
+    </p>
+    <div class="submit-action">
+      <button class="submit-button main">MAIN CHALLANGE</button>
+      <button class="submit-button mini">MINI CHALLANGE</button>
+    </div>
+
+    <div class="section-title">
+      LEADERBOARD
+    </div>
+    <p class="section-desc">
+      Climb your way up the leaderboard and<br>
+      check out how you are faring in our<br>
+      Jump For Happiness mini challenges!
+    </p>
+    <div class="leaderboard-action">
+      <button class="leaderboard-button">VIEW LEADERBOARD</button>
     </div>
   </section>
 

@@ -6,7 +6,7 @@
   padding-bottom: 50px;
   padding-top: 120px;
   transform: translateY(-120px);
-
+  margin-bottom: -120px;
 }
 
 .amazing-jumper-title {
@@ -29,13 +29,13 @@
   font-size: 16px;
 }
 
-.main-challange-button-items {
+.amazing-jumper-button-items {
   overflow-x: auto;
   width: 100%;
   padding: 0 20px;
   margin-top: 80px;
 }
 
-.main-challange-button-items .row {
+.amazing-jumper-button-items .row {
   width: 160%;
 }
