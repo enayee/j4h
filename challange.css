@@ -1,0 +1,234 @@
+.main-challange-section {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  min-height: auto;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  margin-top: -80px;
+}
+
+.main-challange-title {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.main-challange-desc {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  font-family: "gotham-medium", sans-serif;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 16px;
+}
+
+.main-challange-button-items {
+  overflow-x: auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.main-challange-button-items .row {
+  width: 160%;
+}
+
+.challange-button {
+  margin: 20px 8px 4px;
+}
+
+.challange-button button {
+  font-family: "gotham-medium", sans-serif;
+  font-size: 14px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.challange-button button:hover,
+.challange-button button:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.main-challange-button-items .prize-name {
+  text-align: center;
+  font-family: "gotham-medium", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 0.9;
+}
+
+.jump-detail {
+  display: none;
+  font-family: "gotham-medium", sans-serif;
+  text-align: center;
+  color: #5A4A42;
+  min-height: 300px;
+}
+
+.jump-detail-img {
+  width: 260px;
+  margin: 12px auto;
+}
+
+.jump-detail-img.small {
+  width: 150px;
+}
+
+.jump-detail img {
+  width: 100%;
+}
+
+.jump-detail .jump-amount {
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.jump-detail .desc-title {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.jump-detail .desc-info {
+  font-size: 8px;
+  width: 240px;
+  margin: auto;
+}
+
+.mini-challange-section {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  min-height: 100vh;
+  z-index: 10;
+  transform: translateY(-120px);
+  position: relative
+}
+
+.mini-challange-title {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-top: 100px;
+}
+
+.main-challange-desc {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  font-family: "gotham-medium", sans-serif;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 16px;
+}
+
+/* wraps entire slider */
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+/* slider controls*/
+.slider-controls {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 5px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000000;
+  opacity: 0.4;
+  outline: none;
+  background-color: transparent;
+  box-shadow: transparent;
+  border: none;
+  padding: 0;
+}
+
+.prev:hover,
+.next:hover,
+.prev:focus,
+.next:focus {
+  opacity: 1;
+  outline: none;
+  background-color: transparent;
+  box-shadow: transparent;
+}
+
+.slider-item {
+  width: 95%;
+  margin: 0 2.5%;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  width: 200%;
+  /* fallback */
+  width: calc(var(--n)*100%);
+  transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
+}
+
+.slider-item__title {
+  margin: auto;
+  margin-top: 24px;
+  font-family: "gotham-bold", sans-serif;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 16px;
+}
+
+.slider-item__desc {
+  margin: auto;
+  margin-top: 20px;
+  font-family: "gotham-medium", sans-serif;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5A4A42;
+  font-size: 14px;
+}
+
+.smooth {
+  transition: transform calc(var(--f, 1)*.5s) ease-out;
+}
+
+img {
+  width: 100%;
+  pointer-events: none;
+}
