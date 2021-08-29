@@ -44,6 +44,7 @@
 
     body {
       position: relative;
+      scroll-behavior: smooth;
     }
 
     section {
@@ -81,10 +82,19 @@
       color: #FFFFFF;
     }
 
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
     @media (min-width: 768px) {
       .section-title {
         font-size: 36px;
       }
+
       .section-desc {
         max-width: 1280px;
         font-size: 18px;
@@ -99,22 +109,37 @@
       <a href="https://www.simedarbyproperty.com/" target="_blank">
         <img class="logo" src="asset/nav-sime-darby-logo.png" alt="sime-darby-logo">
       </a>
-      <a class="hidden-xs nav-desktop">
-        <img src="asset/nav-image-desktop.svg" usemap="#menu">
-      </a>
+      <div class="hidden-xs nav-desktop navbar-menu-wrapper">
+        <div onclick="toggleMenu(true)" id="toggle-menu-display" class="toggle-menu">
+          <img src="asset/icon-arrow-purple.svg">
+        </div>
+        <div onclick="toggleMenu(false)" style="display: none;" id="toggle-menu-hide" class="toggle-menu left">
+          <img src="asset/icon-arrow-purple.svg">
+        </div>
+        <a class="nav-register-button" href="/#register">
+          <div onclick="toggleMenu(false)" class="toggle-register">
+            <img src="asset/icon-arrow-brown.svg">
+          </div>
+          REGISTER NOW
+        </a>
+      </div>
       <a href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/" target="_blank">
         <img class="logo" src="asset/nav-serenia-city-logo.png" alt="serenia-city-logo">
       </a>
     </div>
-    <img class="visible-xs" src="asset/nav-image.png" usemap="#menu">
-    <map name="menu">
-      <area href="/#register" coords="990,-2,1494,201" shape="rect">
-    </map>
-    <div onclick="toggleMenu(true)" id="toggle-menu-display" class="toggle-menu">
-      <i>→</i>
-    </div>
-    <div onclick="toggleMenu(false)" style="display: none;" id="toggle-menu-hide" class="toggle-menu">
-      <i>←</i>
+    <div class="navbar-menu-wrapper visible-xs">
+      <div onclick="toggleMenu(true)" id="toggle-menu-display" class="toggle-menu">
+        <img src="asset/icon-arrow-purple.svg">
+      </div>
+      <div onclick="toggleMenu(false)" style="display: none;" id="toggle-menu-hide" class="toggle-menu left">
+        <img src="asset/icon-arrow-purple.svg">
+      </div>
+      <a class="nav-register-button" href="/#register">
+        <div onclick="toggleMenu(false)" class="toggle-register">
+          <img src="asset/icon-arrow-brown.svg">
+        </div>
+        REGISTER NOW
+      </a>
     </div>
     <div class="nav-links" style="left: -200px;">
       <a onclick="toggleMenu(false)" href="/">HOME</a>
@@ -500,7 +525,8 @@
   <footer id="contact-us" class="footer-contact-us">
     <div class="footer-wrapper d-flex flex-column flex-lg-row justify-content-between">
       <div class="footer-list d-flex flex-column">
-        <a class="footer-list__item" href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/" target="_blank">
+        <a class="footer-list__item" href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/"
+          target="_blank">
           Serenia Aiora<i class="fa fa-external-link" aria-hidden="true"></i>
         </a>
         <a class="footer-list__item" href="/faq/">FAQ</a>

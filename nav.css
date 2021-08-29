@@ -18,53 +18,77 @@
   box-sizing: content-box;
 }
 
-.nav-wrapper img {
+/* .nav-wrapper img {
   width: 100%;
-  max-height: 52px;
+} */
+
+.navbar-menu-wrapper {
+  width: 100vw;
+  height: 52px;
+  background-image: url(asset/nav-image-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+
+
 }
 
-@media (min-width: 768px) {
-  .nav-wrapper {
-    background-color: transparent;
-    max-height: 100px;
-    height: 100px;
-    position: fixed;
-  }
-  .nav-desktop {
-    flex-grow: 1;
-    margin: 0 20px;
-  }
-
-  .nav-desktop img, .nav-wrapper img {
-    width: 100%;
-    max-height: 60px;
-  }
-  .nav-company-logo {
-    max-width: 880px;
-    align-items: flex-start;
-    margin: auto;
-  }
-
-  .nav-company-logo .logo {
-    width: 40px;
-    padding: 10px 20px;
-    box-sizing: content-box;
-  }
+.navbar-menu-wrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 .toggle-menu {
   position: absolute;
   background-color: #CE9669;
-  color: #4F345D;
+  color: #4a375c;
   z-index: 20;
-  padding: 2px;
-  font-size: 16px;
-  line-height: 12px;
-  width: 20px;
-  height: 20px;
+  padding: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 16px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   left: 12px;
-  bottom: 18px;
+  bottom: 12px;
+  cursor: pointer;
+}
+
+.toggle-menu.left {
+  transform: rotate(180deg);
+}
+
+.toggle-menu img {
+  width: 16px;
+}
+
+.nav-register-button {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  color: #FFFFFF;
+  font-family: "gotham-bold", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav-register-button .toggle-register {
+  color: #CE9669;
+  background-color: #4a375c;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.nav-register-button .toggle-register img {
+  width: 20px;
 }
 
 .nav-links {
@@ -79,7 +103,7 @@
 }
 
 .nav-links a {
-  font-family: "gotham-bold", sans-serif;
+  font-family: "gotham-medium", sans-serif;
   color: #FFFFFF;
   margin: 2px 0;
   font-size: 16px;
@@ -89,4 +113,47 @@
   display: block;
   width: 100%;
   border-top: 1px solid #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .nav-wrapper {
+    background-color: transparent;
+    max-height: 100px;
+    height: 100px;
+    position: fixed;
+  }
+  .navbar-menu-wrapper {
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+  }
+
+  .nav-company-logo {
+    max-width: 880px;
+    align-items: flex-start;
+    margin: auto;
+  }
+
+  .toggle-menu {
+    left: 16px;
+    bottom: 0;
+    top: 11px;
+  }
+
+  .nav-register-button {
+    right: 12px;
+    bottom: 0;
+    top: 16px;
+    align-items: flex-start;
+  }
+
+  .nav-register-button .toggle-register {
+    margin-top: -5px;
+  }
+
+  .nav-company-logo .logo {
+    width: 40px;
+    padding: 10px 20px;
+    box-sizing: content-box;
+  }
 }

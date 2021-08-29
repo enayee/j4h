@@ -113,11 +113,11 @@
   background-position: top center;
   background-size: cover;
   padding-bottom: 80px;
-  padding-top: 20px;
-  min-height: 100vh;
+  padding-top: 60px;
+  min-height: auto;
   z-index: 100;
-  transform: translateY(-120px);
-  margin-bottom: -120px;
+  transform: translateY(-140px);
+  margin-bottom: -140px;
   position: relative;
   background-image: url(asset/mini-challenge-bg.png);
 }
@@ -237,6 +237,7 @@ img {
     background-image: url(asset/mini-challenge-bg-desktop.jpg);
     transform: none;
     margin-bottom: 0;
+    padding-top: 20px;
     padding-bottom: 40px;
     min-height: auto;
     background-position: bottom center;
