@@ -70,7 +70,7 @@
 
 @media (min-width: 768px) {
   .footer-wrapper {
-    max-width: 1280px;
+    max-width: 880px;
     margin: auto;
   }
   .footer-list__item, .contact-us-official {
@@ -83,7 +83,7 @@
 
   .contact-us-organizer {
     font-size: 12px;
-    max-width: 1280px;
+    max-width: 880px;
     margin: auto;
   }
   .contact-us-organizer img {

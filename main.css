@@ -9,9 +9,22 @@
   .main-banner {
     background-image: url(asset/main-banner-bg-desktop.jpg);
     transform: translateY(-100px);
-    padding-top: 120px;
+    padding-top: 160px;
     margin-bottom: -100px;
-    min-height: 100vh;
+    min-height: 1000px;
+    background-position: bottom center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-banner {
+    min-height: 1100px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .main-banner {
+    min-height: 1200px;
   }
 }
 

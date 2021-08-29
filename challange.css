@@ -245,15 +245,15 @@ img {
     font-size: 36px;
   }
   .main-challange-desc {
-    max-width: 1280px;
-    font-size: 24px;
+    max-width: 880px;
+    font-size: 18px;
   }
 
   .main-challange-button-items {
     width: 90%;
     padding: 0 20px;
     margin: auto;
-    max-width: 1280px;
+    max-width: 880px;
   }
 
   .main-challange-button-items .row {
@@ -279,7 +279,7 @@ img {
   }
 
   .jump-detail .desc-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .jump-detail .desc-info {
@@ -291,9 +291,11 @@ img {
   .mini-challange-title {
     margin-top: -120px;
   }
+}
 
+@media (min-width: 1020px) {
   .slider-container {
-    max-width: 1080px;
+    max-width: 880px;
     margin: auto;
   }
   .slider-item__title {
@@ -301,7 +303,7 @@ img {
     margin-top: 40px;
   }
   .slider-item__desc {
-    font-size: 20px;
+    font-size: 18px;
   }
   .slider-controls {
     display: none;

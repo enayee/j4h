@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 768px) {
-  .step-participate-section {
+.step-participate-section {
     background-image: url(asset/main-step-participate-bg-desktop.jpg);
     margin: auto;
   }
@@ -60,7 +60,7 @@
     font-size: 16px;
   }
   .step-container {
-    max-width: 1080px;
+    max-width: 880px;
     margin: auto !important;
     align-items: flex-start;
   }
