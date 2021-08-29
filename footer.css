@@ -67,3 +67,26 @@
 .contact-us-organizer img {
   width: 30px;
 }
+
+@media (min-width: 768px) {
+  .footer-wrapper {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .footer-list__item, .contact-us-official {
+    font-size: 20px;
+  }
+  
+  .footer-list__item i, .footer-contact-us .email {
+    font-size: 14px;
+  }
+
+  .contact-us-organizer {
+    font-size: 12px;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .contact-us-organizer img {
+    width: 50px;
+  }
+}

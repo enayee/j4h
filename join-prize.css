@@ -4,6 +4,7 @@
   background-size: cover;
   min-height: auto;
   padding-bottom: 50px;
+  background-image: url(asset/main-join-prize-bg.png);
 }
 
 .join-prize-container {
@@ -77,4 +78,46 @@
   color: #000000;
   font-size: 16px;
   line-height: 0.9;
+}
+
+@media (min-width: 768px) {
+  .join-prize-section {
+    background-image: url(asset/main-join-prize-bg-desktop.jpg);
+    margin-top: -2px;
+    padding-bottom: 140px;
+  }
+
+  .join-prize-container {
+    transform: translateY(-100px);
+  }
+
+  .join-prize-title {
+    line-height: normal;
+  }
+
+  .join-prize-items .row {
+    width: 80%;
+    margin: auto;
+    max-width: 1280px;
+  }
+
+  .join-prize-items .prize-one {
+    padding: 0 60px;
+  }
+
+  .join-prize-items .prize-two {
+    padding: 0 60px;
+  }
+
+  .join-prize-items .prize-three {
+    padding: 0 60px;
+  }
+
+  .join-prize-items .prize-four {
+    padding: 0 60px;
+  }
+
+  .join-prize-items .prize-name {
+    font-size: 24px;
+  }
 }

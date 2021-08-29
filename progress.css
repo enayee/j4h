@@ -4,6 +4,7 @@
   background-size: cover;
   padding-bottom: 140px;
   margin-top: -2px;
+  background-image: url(asset/main-progress-bg.png);
 }
 
 .main-banner-title {
@@ -12,17 +13,6 @@
   color: #FFFFFF;
   font-size: 30px;
   font-weight: bold;
-}
-
-.progress-desc {
-  width: 90%;
-  margin: auto;
-  margin-top: 24px;
-  font-family: "gotham-medium", sans-serif;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 16px;
 }
 
 .progress-bird {
@@ -87,4 +77,44 @@
 .progress-infographic {
   width: 90%;
   margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+  .progress-banner {
+    background-image: url(asset/main-progress-bg-desktop.jpg);
+    padding-bottom: 280px;
+  }
+
+  .progress-bird {
+    width: 300px;
+  }
+
+  .progress-bird_amount .value {
+    font-size: 28px;
+  }
+
+  .progress-bird_amount .jumps,
+  .progress-bird_amount .title {
+    font-size: 24px;
+  }
+
+  .progressing-bar {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .progressing-bar .amount {
+    font-size: 14px;
+  }
+
+  .progress-infographic {
+    max-width: 800px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+  .progress-infographic .info {
+    width: 40%;
+  }
 }

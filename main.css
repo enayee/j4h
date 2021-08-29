@@ -3,6 +3,16 @@
   background-position: bottom center;
   background-size: cover;
   min-height: 800px;
+  background-image: url(asset/main-banner-bg.png);
+}
+@media (min-width: 768px) {
+  .main-banner {
+    background-image: url(asset/main-banner-bg-desktop.jpg);
+    transform: translateY(-100px);
+    padding-top: 120px;
+    margin-bottom: -100px;
+    min-height: 100vh;
+  }
 }
 
 .main-logo {

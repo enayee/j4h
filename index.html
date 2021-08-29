@@ -80,6 +80,16 @@
     .section-desc.white {
       color: #FFFFFF;
     }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 36px;
+      }
+      .section-desc {
+        max-width: 1280px;
+        font-size: 24px;
+      }
+    }
   </style>
 
 <body>
@@ -89,14 +99,17 @@
       <a href="https://www.simedarbyproperty.com/" target="_blank">
         <img class="logo" src="asset/nav-sime-darby-logo.png" alt="sime-darby-logo">
       </a>
+      <a class="hidden-xs nav-desktop">
+        <img src="asset/nav-image-desktop.svg" usemap="#menu">
+      </a>
       <a href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/" target="_blank">
         <img class="logo" src="asset/nav-serenia-city-logo.png" alt="serenia-city-logo">
       </a>
     </div>
-    <img src="asset/nav-image.png" usemap="#menu">
+    <img class="visible-xs" src="asset/nav-image.png" usemap="#menu">
     <map name="menu">
       <area href="/#register" coords="990,-2,1494,201" shape="rect">
-  </map>
+    </map>
     <div onclick="toggleMenu(true)" id="toggle-menu-display" class="toggle-menu">
       <i>→</i>
     </div>
@@ -113,7 +126,7 @@
     </div>
   </div>
   <!-- Main Banner -->
-  <section id="main" class="main-banner" style="background-image: url(asset/main-banner-bg.png);">
+  <section id="main" class="main-banner">
     <div class="main-logo">
       <img src="asset/logo-aiora.svg" alt="aiora-logo">
     </div>
@@ -135,7 +148,7 @@
 
   </section>
   <!-- Progress -->
-  <section id="description" class="progress-banner" style="background-image: url(asset/main-progress-bg.png);">
+  <section id="description" class="progress-banner">
     <div class="section-title white">
       PROGRESS
     </div>
@@ -185,7 +198,7 @@
 
   </section>
   <!-- Join Prize -->
-  <section id="join-prize" class="join-prize-section" style="background-image: url(asset/main-join-prize-bg.png);">
+  <section id="join-prize" class="join-prize-section">
     <div class="join-prize-container">
       <div class="section-title join-prize-title">
         JOIN TO UNLOCK<br>THE PRIZES
@@ -198,30 +211,29 @@
         more prize now!
       </p>
       <div class="join-prize-items">
-        <div class="row" width="120%">
+        <div class="row">
           <div class="prize-one col-3">
             <img style="width: 100%;" src="asset/main-join-prize-img-1.png" alt="1-499-participants-price">
           </div>
-          <div class="prize-one col-3">
+          <div class="prize-two col-3">
             <img style="width: 100%;" src="asset/main-join-prize-img-2.png" alt="500-participants-price">
           </div>
-          <div class="prize-one col-3">
+          <div class="prize-three col-3">
             <img style="width: 100%;" src="asset/main-join-prize-img-3.png" alt="1000-participants-price">
           </div>
-          <div class="prize-one col-3">
+          <div class="prize-four col-3">
             <img style="width: 100%;" src="asset/main-join-prize-img-4.png" alt="1500-participants-price">
           </div>
           <div class="prize-name col-3">1 - 499<br>Participants</div>
           <div class="prize-name col-3">500<br>Participants</div>
           <div class="prize-name col-3">1000<br>Participants</div>
-          <div class="prize-name col-3">1500<br>Participants</div>
+          <div class="prize-name col-3">2000<br>Participants</div>
         </div>
       </div>
     </div>
   </section>
   <!-- Main Challange -->
-  <section id="main-challange" class="main-challange-section"
-    style="background-image: url(asset/main-challange-bg.png);">
+  <section id="main-challange" class="main-challange-section">
     <div class="section-title main-challange-title">
       MAIN CHALLANGE
     </div>
@@ -232,9 +244,9 @@
       surprise deal from us!
     </p>
     <div class="main-challange-button-items">
-      <div class="row flex-nowrap" width="120%">
+      <div class="row flex-nowrap">
         <div class="challange-button col-4">
-          <button id="challange-primary-button"
+          <button id="challange-primary-button" focus
             onclick="toggleMainChallangeSelect('main-challange-primary-desc');">PRIMARY JUMP</button>
         </div>
         <div class="challange-button col-4">
@@ -286,8 +298,7 @@
 
   </section>
   <!-- Mini Challange -->
-  <section id="mini-challange" class="mini-challange-section"
-    style="background-image: url(asset/mini-challenge-bg.png);">
+  <section id="mini-challange" class="mini-challange-section">
     <div class="section-title mini-challange-title">
       MINI CHALLANGE
     </div>
@@ -333,8 +344,7 @@
 
   </section>
   <!-- Amazing Jumper -->
-  <section id="amazing-jumper" class="amazing-jumper-section"
-    style="background-image: url(asset/main-amazing-jumper-bg.png);">
+  <section id="amazing-jumper" class="amazing-jumper-section">
     <div class="amazing-jumper-title">
       OUR AMAZING JUMPER!
     </div>
@@ -351,8 +361,7 @@
     </div>
   </section>
   <!-- Result Submit & Leaderboard -->
-  <section id="result-submit-leaderboard" class="result-submit-leaderboard-section submit"
-    style="background-image: url(asset/main-result-submit-leaderboard-bg.png);">
+  <section id="result-submit-leaderboard" class="result-submit-leaderboard-section submit">
     <div class="section-title">
       RESULT SUBMISSION
     </div>
@@ -381,17 +390,17 @@
       Jump For Happiness mini challenges!
     </p>
     <div class="leaderboard-action">
-      <button class="leaderboard-button" onclick="location.href='/leaderboard-flash-jumper-challange/'">VIEW LEADERBOARD</button>
+      <button class="leaderboard-button" onclick="location.href='/leaderboard-flash-jumper-challange/'">VIEW
+        LEADERBOARD</button>
     </div>
   </section>
   <!-- Steps -->
-  <section id="step-participate" class="step-participate-section"
-    style="background-image: url(asset/main-step-participate-bg.png);">
+  <section id="step-participate" class="step-participate-section">
     <div class="section-title">
       STEPS TO PARTICIPATE
     </div>
-    <div class="row step-container">
-      <div class="step-item col-sm-12">
+    <div class="step-container">
+      <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="step-item__title">
           STEP 1
         </div>
@@ -402,7 +411,7 @@
           Register your personal<br>information.
         </div>
       </div>
-      <div class="step-item col-sm-12">
+      <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="step-item__title">
           STEP 2
         </div>
@@ -413,7 +422,7 @@
           Receive a confirmation email.
         </div>
       </div>
-      <div class="step-item col-sm-12">
+      <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="step-item__title">
           STEP 3
         </div>
@@ -425,7 +434,7 @@
           2021.
         </div>
       </div>
-      <div class="step-item col-sm-12">
+      <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="step-item__title">
           STEP 4
         </div>
@@ -437,7 +446,7 @@
           via<br>our landing page.
         </div>
       </div>
-      <div class="step-item col-sm-12">
+      <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="step-item__title">
           STEP 5
         </div>
@@ -450,7 +459,7 @@
           set your<br>post to public.
         </div>
       </div>
-      <div class="step-item col-sm-12">
+      <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="step-item__title">
           STEP 6
         </div>
@@ -464,7 +473,7 @@
     </div>
   </section>
   <!-- Register -->
-  <section id="register" class="register-section" style="background-image: url(asset/main-register-bg.png);">
+  <section id="register" class="register-section">
     <div class="section-title">
       REGISTER NOW!
     </div>
@@ -489,24 +498,28 @@
   </section>
   <!-- Footer -->
   <footer id="contact-us" class="footer-contact-us">
-    <div class="footer-list d-flex flex-column">
-      <a class="footer-list__item" href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/" target="_blank">
-        Serenia Aiora<i class="fa fa-external-link" aria-hidden="true"></i>
-      </a>
-      <a class="footer-list__item" href="/faq/">FAQ</a>
-      <a class="footer-list__item" href="/leaderboard-flash-jumper-challange/">Leaderboard</a>
-      <a class="footer-list__item" href="/term-and-condition/">Term & Conditions</a>
+    <div class="footer-wrapper d-flex flex-column flex-lg-row justify-content-between">
+      <div class="footer-list d-flex flex-column">
+        <a class="footer-list__item" href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/" target="_blank">
+          Serenia Aiora<i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
+        <a class="footer-list__item" href="/faq/">FAQ</a>
+        <a class="footer-list__item" href="/leaderboard-flash-jumper-challange/">Leaderboard</a>
+        <a class="footer-list__item" href="/term-and-condition/">Term & Conditions</a>
+      </div>
+      <hr class="hidden-lg hidden-md">
+      <div>
+        <div class="contact-us-title">Contact Us</div>
+        <a href="mailto:jumpforhappiness2021@gmail.com" class="email">
+          <i class="fa fa-envelope" aria-hidden="true"></i>jumpforhappiness2021@gmail.com
+        </a>
+        <div class="contact-us-official">Official Organizer-<br>
+          <span style="font-size: 0.75em">Sime Darby Property</span>
+        </div>
+      </div>
+      <hr class="hidden-lg hidden-md">
     </div>
-    <hr>
-    <div class="contact-us-title">Contact Us</div>
-    <a href="mailto:jumpforhappiness2021@gmail.com" class="email">
-      <i class="fa fa-envelope" aria-hidden="true"></i>jumpforhappiness2021@gmail.com
-    </a>
-    <div class="contact-us-official">Official Organizer-<br>
-      <span style="font-size: 14px">Sime Darby Property</span>
-    </div>
-    <hr>
-    <div class="d-flex justify-content-between contact-us-organizer align-items-end">
+    <div class="d-flex justify-content-between align-items-end contact-us-organizer">
       <div>Sime Darby Property</div>
       <a href="https://www.simedarbyproperty.com/" target="_blank">
         <img class="logo" src="asset/nav-sime-darby-logo.png" alt="sime-darby-logo">
@@ -519,15 +532,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
   <script>
-
     function toggleMenu(openMenu) {
       if (openMenu) {
         document.getElementsByClassName('nav-links')[0].style.display = 'flex';
         document.getElementsByClassName('nav-links')[0].style.left = '0';
         document.getElementById('toggle-menu-hide').style.display = 'block';
         document.getElementById('toggle-menu-display').style.display = 'none';
-      }
-      else {
+      } else {
         document.getElementsByClassName('nav-links')[0].style.display = 'none';
         document.getElementsByClassName('nav-links')[0].style.left = '-200px';
         document.getElementById('toggle-menu-hide').style.display = 'none';

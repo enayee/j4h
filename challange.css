@@ -6,6 +6,7 @@
   padding-bottom: 50px;
   padding-top: 20px;
   margin-top: -80px;
+  background-image: url(asset/main-challange-bg.png);
 }
 
 .main-challange-title {
@@ -118,6 +119,7 @@
   transform: translateY(-120px);
   margin-bottom: -120px;
   position: relative;
+  background-image: url(asset/mini-challenge-bg.png);
 }
 
 .mini-challange-title {
@@ -135,7 +137,6 @@
   font-size: 16px;
 }
 
-/* wraps entire slider */
 .slider-wrapper {
   overflow: hidden;
   width: 100%;
@@ -143,7 +144,6 @@
   padding-bottom: 50px;
 }
 
-/* slider controls*/
 .slider-controls {
   position: absolute;
   bottom: -3px;
@@ -194,7 +194,6 @@
   align-items: center;
   overflow-y: hidden;
   width: 200%;
-  /* fallback */
   width: calc(var(--n)*100%);
   transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
 }
@@ -226,4 +225,88 @@
 img {
   width: 100%;
   pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .main-challange-section {
+    background-image: url(asset/main-challange-bg-desktop.jpg);
+    padding-bottom: 280px;
+  }
+
+  .mini-challange-section {
+    background-image: url(asset/mini-challenge-bg-desktop.jpg);
+    transform: none;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    min-height: auto;
+    background-position: bottom center;
+  }
+  .main-challange-title {
+    font-size: 36px;
+  }
+  .main-challange-desc {
+    max-width: 1280px;
+    font-size: 24px;
+  }
+
+  .main-challange-button-items {
+    width: 90%;
+    padding: 0 20px;
+    margin: auto;
+    max-width: 1280px;
+  }
+
+  .main-challange-button-items .row {
+    width: 100%;
+    margin: auto;
+    max-width: 680px;
+  }
+
+  .jump-detail {
+    min-height: 550px;
+  }
+
+  .jump-detail-img {
+    width: 480px
+  }
+
+  .jump-detail-img.small {
+    width: 300px
+  }
+
+  .jump-detail .jump-amount {
+    font-size: 24px;
+  }
+
+  .jump-detail .desc-title {
+    font-size: 24px;
+  }
+
+  .jump-detail .desc-info {
+    font-size: 14px;
+    width: 480px;
+    margin: auto;
+  }
+
+  .mini-challange-title {
+    margin-top: -120px;
+  }
+
+  .slider-container {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .slider-item__title {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  .slider-item__desc {
+    font-size: 20px;
+  }
+  .slider-controls {
+    display: none;
+  }
+  .slider-wrapper {
+    padding-bottom: 100px;
+  }
 }

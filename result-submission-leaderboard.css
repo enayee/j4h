@@ -4,6 +4,7 @@
   background-size: cover;
   min-height: auto;
   padding-bottom: 80px;
+  background-image: url(asset/main-result-submit-leaderboard-bg.png);
 }
 
 .result-submit-leaderboard-section.submit {
@@ -82,4 +83,18 @@
   border: 0;
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .result-submit-leaderboard-section {
+    background-position: center center;
+    background-image: url(asset/main-result-submit-leaderboard-bg-desktop.jpg);
+  }
+  .submit-button, .leaderboard-button {
+    font-size: 24px;
+    width: 360px;
+    margin: 0 10px;
+    padding: 12px;
+    border-radius: 30px;
+  }
 }

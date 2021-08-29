@@ -4,6 +4,7 @@
   background-size: cover;
   min-height: auto;
   padding-bottom: 80px;
+  background-image: url(asset/main-step-participate-bg.png);
 }
 
 .step-participate-section .section-title {
@@ -13,13 +14,15 @@
 .step-container {
   margin-top: 20px;
   max-width: 100%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .step-item {
   margin-bottom: 20px;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
 }
 
 .step-item__title {
@@ -46,4 +49,19 @@
   color: #5A4A42;
   font-size: 12px;
   line-height: 14px;
+}
+
+@media (min-width: 768px) {
+  .step-participate-section {
+    background-image: url(asset/main-step-participate-bg-desktop.jpg);
+    margin: auto;
+  }
+  .step-item__desc {
+    font-size: 16px;
+  }
+  .step-container {
+    max-width: 1080px;
+    margin: auto !important;
+    align-items: flex-start;
+  }
 }

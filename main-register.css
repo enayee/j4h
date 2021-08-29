@@ -5,6 +5,7 @@
   min-height: auto;
   margin-top: -2px;
   padding-bottom: 40px;
+  background-image: url(asset/main-register-bg.png);
 }
 
 .register-section .section-title {
@@ -82,4 +83,37 @@
   border-radius: 20px;
   border: 0;
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .register-section {
+    background-position: top center;
+    background-image: url(asset/main-register-bg-desktop.jpg);
+    margin: auto;
+  }
+
+  .register-form-wrapper {
+    max-width: 580px;
+  }
+
+  .register-form-wrapper label {
+    font-size: 20px;
+  }
+
+  .tnc-checkbox-label {
+    font-size: 12px !important;
+  }
+
+  .register-form-wrapper input[type="text"],
+  .register-form-wrapper input[type="email"],
+  .register-form-wrapper input[type="tel"] {
+    padding: 12px;
+  }
+
+  .register-button button {
+    font-size: 24px;
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 30px;
+  }
 }
