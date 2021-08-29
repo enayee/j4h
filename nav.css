@@ -1,6 +1,7 @@
 .nav-wrapper {
   width: 100%;
   background-color: #99C442;
+  position: relative;
 }
 
 .nav-company-logo {
@@ -11,12 +12,51 @@
 }
 
 .nav-company-logo .logo {
- /* height: 50px; */
- width: 35px;
- padding: 10px;
- box-sizing: content-box;
+  /* height: 50px; */
+  width: 35px;
+  padding: 10px;
+  box-sizing: content-box;
 }
 
 .nav-wrapper img {
   width: 100%;
+}
+
+.toggle-menu {
+  position: absolute;
+  background-color: #CE9669;
+  color: #4F345D;
+  z-index: 20;
+  padding: 2px;
+  font-size: 16px;
+  line-height: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 16px;
+  bottom: 25px;
+}
+
+.nav-links {
+  position: absolute;
+  background-color: rgba(79, 52, 93, 0.9);
+  width: 280px;
+  padding: 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  transition: all 200ms linear;
+}
+
+.nav-links a {
+  font-family: "gotham-bold", sans-serif;
+  color: #FFFFFF;
+  margin: 2px 0;
+  font-size: 16px;
+}
+
+.nav-links hr {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
 }
