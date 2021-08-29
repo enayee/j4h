@@ -122,32 +122,40 @@
           </div>
           REGISTER NOW
         </a>
+        <div class="nav-links" style="left: -200px;">
+          <a onclick="toggleMenu(false)" href="/">HOME</a>
+          <a onclick="toggleMenu(false)" href="/#register">REGISTER</a>
+          <a onclick="toggleMenu(false)" href="/">RESULT SUBMISSION</a>
+          <a onclick="toggleMenu(false)" href="/leaderboard-flash-jumper-challange/">LEADERBOARD</a>
+          <a onclick="toggleMenu(false)" href="/faq/">FAQ</a>
+          <hr>
+        </div>
       </div>
       <a href="https://www.simedarbyproperty.com/serenia-city/serenia-aiora/" target="_blank">
         <img class="logo" src="asset/nav-serenia-city-logo.png" alt="serenia-city-logo">
       </a>
     </div>
     <div class="navbar-menu-wrapper visible-xs">
-      <div onclick="toggleMenu(true)" id="toggle-menu-display" class="toggle-menu">
+      <div onclick="toggleMenuM(true)" id="toggle-menu-display-m" class="toggle-menu">
         <img src="asset/icon-arrow-purple.svg">
       </div>
-      <div onclick="toggleMenu(false)" style="display: none;" id="toggle-menu-hide" class="toggle-menu left">
+      <div onclick="toggleMenuM(false)" style="display: none;" id="toggle-menu-hide-m" class="toggle-menu left">
         <img src="asset/icon-arrow-purple.svg">
       </div>
       <a class="nav-register-button" href="/#register">
-        <div onclick="toggleMenu(false)" class="toggle-register">
+        <div onclick="toggleMenuM(false)" class="toggle-register">
           <img src="asset/icon-arrow-brown.svg">
         </div>
         REGISTER NOW
       </a>
-    </div>
-    <div class="nav-links" style="left: -200px;">
-      <a onclick="toggleMenu(false)" href="/">HOME</a>
-      <a onclick="toggleMenu(false)" href="/#register">REGISTER</a>
-      <a onclick="toggleMenu(false)" href="/">RESULT SUBMISSION</a>
-      <a onclick="toggleMenu(false)" href="/leaderboard-flash-jumper-challange/">LEADERBOARD</a>
-      <a onclick="toggleMenu(false)" href="/faq/">FAQ</a>
-      <hr>
+      <div class="nav-links" style="left: -200px;">
+        <a onclick="toggleMenuM(false)" href="/">HOME</a>
+        <a onclick="toggleMenuM(false)" href="/#register">REGISTER</a>
+        <a onclick="toggleMenuM(false)" href="/">RESULT SUBMISSION</a>
+        <a onclick="toggleMenuM(false)" href="/leaderboard-flash-jumper-challange/">LEADERBOARD</a>
+        <a onclick="toggleMenuM(false)" href="/faq/">FAQ</a>
+        <hr>
+      </div>
     </div>
   </div>
   <!-- Main Banner -->
@@ -572,6 +580,19 @@
       }
     }
 
+    function toggleMenuM(openMenu) {
+      if (openMenu) {
+        document.getElementsByClassName('nav-links')[1].style.display = 'flex';
+        document.getElementsByClassName('nav-links')[1].style.left = '0';
+        document.getElementById('toggle-menu-hide-m').style.display = 'block';
+        document.getElementById('toggle-menu-display-m').style.display = 'none';
+      } else {
+        document.getElementsByClassName('nav-links')[1].style.display = 'none';
+        document.getElementsByClassName('nav-links')[1].style.left = '-200px';
+        document.getElementById('toggle-menu-hide-m').style.display = 'none';
+        document.getElementById('toggle-menu-display-m').style.display = 'block';
+      }
+    }
 
     function toggleMainChallangeSelect(id) {
       document.getElementById('main-challange-primary-desc').style.display = 'none';

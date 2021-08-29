@@ -93,6 +93,7 @@
 
 .nav-links {
   position: absolute;
+  top: 117px;
   background-color: rgba(79, 52, 93, 0.9);
   width: 280px;
   padding: 0 10px 10px;
@@ -122,6 +123,7 @@
     height: 100px;
     position: fixed;
   }
+
   .navbar-menu-wrapper {
     flex-grow: 1;
     margin: 0 20px;
@@ -135,9 +137,13 @@
   }
 
   .toggle-menu {
-    left: 16px;
+    left: 12px;
     bottom: 0;
-    top: 11px;
+    top: 16px;
+  }
+
+  .nav-links {
+    top: 52px;
   }
 
   .nav-register-button {
