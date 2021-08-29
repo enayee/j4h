@@ -1,3 +1,11 @@
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #5A4A42;
+}
+
 .footer-contact-us {
   background-color: #D9DA6A;
   padding: 20px;
@@ -7,9 +15,7 @@
   padding: 40px 0 20px;
 }
 
-.footer-list {
-
-}
+.footer-list {}
 
 .footer-list__item {
   font-family: 'gotham-medium', sans-serif;
@@ -73,11 +79,14 @@
     max-width: 880px;
     margin: auto;
   }
-  .footer-list__item, .contact-us-official {
+
+  .footer-list__item,
+  .contact-us-official {
     font-size: 20px;
   }
-  
-  .footer-list__item i, .footer-contact-us .email {
+
+  .footer-list__item i,
+  .footer-contact-us .email {
     font-size: 14px;
   }
 
@@ -86,6 +95,7 @@
     max-width: 880px;
     margin: auto;
   }
+
   .contact-us-organizer img {
     width: 50px;
   }

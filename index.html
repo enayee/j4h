@@ -177,7 +177,7 @@
       draw<br>prizes now!
     </p>
 
-    <div class="main-register-button"> REGISTER NOW</div>
+    <div class="main-register-button" onclick="location.href='/#register'">REGISTER NOW</div>
 
   </section>
   <!-- Progress -->
@@ -279,7 +279,7 @@
     <div class="main-challange-button-items">
       <div class="row flex-nowrap">
         <div class="challange-button col-4">
-          <button id="challange-primary-button" focus
+          <button id="challange-primary-button"
             onclick="toggleMainChallangeSelect('main-challange-primary-desc');">PRIMARY JUMP</button>
         </div>
         <div class="challange-button col-4">
@@ -513,7 +513,7 @@
     <div class="register-form-wrapper">
       <form action="" method="post">
         <label>Name</label>
-        <input type="text" tabindex="1" required autofocus>
+        <input type="text" tabindex="1" required>
         <label>Email Address</label>
         <input type="email" tabindex="2" required>
         <label>Mobile Number</label>
@@ -601,7 +601,7 @@
       document.getElementById(id).style.display = 'block';
     }
 
-    document.getElementById("challange-primary-button").focus();
+    document.getElementById("challange-primary-button");
     toggleMainChallangeSelect('main-challange-primary-desc')
 
     const _C = document.querySelector(".slider-container"),
