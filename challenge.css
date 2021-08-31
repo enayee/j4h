@@ -1,4 +1,4 @@
-.main-challange-section {
+.main-challenge-section {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -6,10 +6,10 @@
   padding-bottom: 50px;
   padding-top: 20px;
   margin-top: -80px;
-  background-image: url(asset/main-challange-bg.png);
+  background-image: url(asset/main-challenge-bg.png);
 }
 
-.main-challange-title {
+.main-challenge-title {
   font-family: 'Philosopher', sans-serif;
   text-align: center;
   color: #5A4A42;
@@ -18,7 +18,7 @@
   line-height: 26px;
 }
 
-.main-challange-desc {
+.main-challenge-desc {
   width: 90%;
   margin: auto;
   margin-top: 20px;
@@ -29,25 +29,25 @@
   font-size: 16px;
 }
 
-.main-challange-button-items {
+.main-challenge-button-items {
   overflow-x: auto;
   width: 100%;
   padding: 0 20px;
 }
 
-.main-challange-button-items .row {
+.main-challenge-button-items .row {
   width: 160%;
 }
 
-.challange-button {
+.challenge-button {
   margin: 20px 8px 4px;
 }
 
-.challange-button button {
+.challenge-button button {
   font-family: "gotham-medium", sans-serif;
   font-size: 14px;
   width: 180px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #B9D339;
   color: #000000;
   padding: 8px 12px;
   border-radius: 20px;
@@ -55,14 +55,15 @@
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.challange-button button:hover,
-.challange-button button:focus {
+.challenge-button button:hover,
+.challenge-button button:focus,
+.challenge-button.white button {
   outline: none;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
-.main-challange-button-items .prize-name {
+.main-challenge-button-items .prize-name {
   text-align: center;
   font-family: "gotham-medium", sans-serif;
   color: #000000;
@@ -108,7 +109,7 @@
   margin: auto;
 }
 
-.mini-challange-section {
+.mini-challenge-section {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -122,11 +123,11 @@
   background-image: url(asset/mini-challenge-bg.png);
 }
 
-.mini-challange-title {
+.mini-challenge-title {
   margin-top: 100px;
 }
 
-.main-challange-desc {
+.main-challenge-desc {
   width: 95%;
   margin: auto;
   margin-top: 20px;
@@ -228,12 +229,12 @@ img {
 }
 
 @media (min-width: 768px) {
-  .main-challange-section {
-    background-image: url(asset/main-challange-bg-desktop.jpg);
+  .main-challenge-section {
+    background-image: url(asset/main-challenge-bg-desktop.jpg);
     padding-bottom: 280px;
   }
 
-  .mini-challange-section {
+  .mini-challenge-section {
     background-image: url(asset/mini-challenge-bg-desktop.jpg);
     transform: none;
     margin-bottom: 0;
@@ -242,22 +243,22 @@ img {
     min-height: auto;
     background-position: bottom center;
   }
-  .main-challange-title {
+  .main-challenge-title {
     font-size: 36px;
   }
-  .main-challange-desc {
+  .main-challenge-desc {
     max-width: 880px;
     font-size: 18px;
   }
 
-  .main-challange-button-items {
+  .main-challenge-button-items {
     width: 90%;
     padding: 0 20px;
     margin: auto;
     max-width: 880px;
   }
 
-  .main-challange-button-items .row {
+  .main-challenge-button-items .row {
     width: 100%;
     margin: auto;
     max-width: 680px;
@@ -289,7 +290,7 @@ img {
     margin: auto;
   }
 
-  .mini-challange-title {
+  .mini-challenge-title {
     margin-top: -120px;
   }
 }

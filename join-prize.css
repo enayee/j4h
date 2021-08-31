@@ -82,9 +82,10 @@
 
 @media (min-width: 768px) {
   .join-prize-section {
-    background-image: url(asset/main-join-prize-bg-desktop.jpg);
+    padding-top: 300px;
+    background-image: url(asset/main-join-prize-bg-desktop.png);
     margin-top: -2px;
-    padding-bottom: 140px;
+    padding-bottom: 240px;
   }
 
   .join-prize-container {

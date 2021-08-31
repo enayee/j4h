@@ -82,7 +82,8 @@
 @media (min-width: 768px) {
   .progress-banner {
     background-image: url(asset/main-progress-bg-desktop.jpg);
-    padding-bottom: 280px;
+    padding-bottom: 20px;
+    background-position: center center;
   }
 
   .progress-bird {
