@@ -100,6 +100,17 @@
         font-size: 18px;
       }
     }
+
+    @media (min-width: 769px) {
+      br {
+        display: none;
+      }
+
+      .section-desc {
+        width: 80%;
+        max-width: 880px;
+      }
+    }
   </style>
 
 <body>
@@ -173,8 +184,11 @@
       16th September - 16th October 2021
     </div>
     <p class="main-banner-desc">
-      Join our Jump For Happiness<br>event from 16th September - 16th October<br>and stand a chance to win<br>our amazing lucky
-      draw<br>prizes now!
+      Join our Jump For Happiness<br>
+      event from 16th September - 16th October<br>
+      and stand a chance to win<br>
+      our amazing luckydraw<br>
+      prizes now!
     </p>
 
     <div class="main-register-button" onclick="location.href='/#register'">REGISTER NOW</div>
@@ -234,7 +248,8 @@
   <section id="join-prize" class="join-prize-section">
     <div class="join-prize-container">
       <div class="section-title join-prize-title">
-        JOIN TO UNLOCK<br>THE PRIZES
+        JOIN TO UNLOCK<br>
+        THE PRIZES
       </div>
       <p class="section-desc">
         Do you want more valuable prizes to be in<br>
@@ -257,10 +272,22 @@
           <div class="prize-four col-3">
             <img style="width: 100%; opacity: 0.5;" src="asset/main-join-prize-img-4.png" alt="1500-participants-price">
           </div>
-          <div class="prize-name col-3">1 - 499<br>Participants</div>
-          <div class="prize-name col-3">500<br>Participants</div>
-          <div class="prize-name col-3">1000<br>Participants</div>
-          <div class="prize-name col-3">2000<br>Participants</div>
+          <div class="prize-name col-3">
+            1 - 499<br>
+            Participants
+          </div>
+          <div class="prize-name col-3">
+            500<br>
+            Participants
+          </div>
+          <div class="prize-name col-3">
+            1000<br>
+            Participants
+          </div>
+          <div class="prize-name col-3">
+            2000<br>
+            Participants
+          </div>
         </div>
       </div>
     </div>
@@ -447,7 +474,8 @@
           <img src="asset/mian-step-participate-1.png" alt="step-1">
         </div>
         <div class="step-item__desc">
-          Register your personal<br>information.
+          Register your personal<br>
+          information.
         </div>
       </div>
       <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -469,8 +497,11 @@
           <img src="asset/mian-step-participate-3.png" alt="step-3">
         </div>
         <div class="step-item__desc">
-          Start jumping anytime,<br>anywhere with any skip-<br>ping apps (YaoYao,<br>Jumpr,etc) from 16 Sep - 16<br>Oct
-          2021.
+          Start jumping anytime,<br>
+          anywhere with any skip-<br>
+          ping apps (YaoYao,<br>
+          Jumpr,etc) from 16 Sep - 16<br>
+          Oct 2021.
         </div>
       </div>
       <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -481,8 +512,11 @@
           <img src="asset/mian-step-participate-4.png" alt="step-4">
         </div>
         <div class="step-item__desc">
-          Screenshot the result from<br>your skipping app. Submit it<br>with your ticket number<br>and total jump counts
-          via<br>our landing page.
+          Screenshot the result from<br>
+          your skipping app. Submit it<br>
+          with your ticket number<br>
+          and total jump counts via<br>
+          our landing page.
         </div>
       </div>
       <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -493,9 +527,15 @@
           <img src="asset/mian-step-participate-5.png" alt="step-5">
         </div>
         <div class="step-item__desc">
-          Post the most insta-worthy<br>shot on Facebook and<br>Instagram with ticket no. in<br>the caption with
-          following<br>hashtag #SereniaCityAiora<br>#JumpForHappiness to<br>take part in the lucky draw.<br>Remember to
-          set your<br>post to public.
+          Post the most insta-worthy<br>
+          shot on Facebook and<br>
+          Instagram with ticket no. in<br>
+          the caption with following<br>
+          hashtag #SereniaCityAiora<br>
+          #JumpForHappiness to<br>
+          take part in the lucky draw.<br>
+          Remember to set your<br>
+          post to public.
         </div>
       </div>
       <div class="step-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -506,7 +546,9 @@
           <img src="asset/mian-step-participate-6.png" alt="step-6">
         </div>
         <div class="step-item__desc">
-          Monitor your jump comtribution<br>on this site and win amazing<br>prizes!
+          Monitor your jump comtribution<br>
+          on this site and win amazing<br>
+          prizes!
         </div>
       </div>
     </div>
@@ -600,22 +642,29 @@
       }
     }
 
-    function toggleMainChallengeSelect(id, isFirst = false) {
+    function toggleMainChallengeSelect(id) {
       document.getElementById('main-challenge-primary-desc').style.display = 'none';
       document.getElementById('main-challenge-secondary-desc').style.display = 'none';
       document.getElementById('main-challenge-grand-desc').style.display = 'none';
       document.getElementById(id).style.display = 'block';
-      if (!isFirst) {
-        for ( var i in document.getElementsByClassName("challenge-button")) {
-          if (document.getElementsByClassName("challenge-button")[i].classList) {
-            document.getElementsByClassName("challenge-button")[i].classList.remove("white");
-          }
+      for ( var i in document.getElementsByClassName("challenge-button")) {
+        if (document.getElementsByClassName("challenge-button")[i].classList) {
+          document.getElementsByClassName("challenge-button")[i].classList.remove("white");
         }
+      }
+      if (id === 'main-challenge-primary-desc') {
+        document.getElementsByClassName("challenge-button")[0].classList.add("white")
+      }
+      if (id === 'main-challenge-secondary-desc') {
+        document.getElementsByClassName("challenge-button")[1].classList.add("white")
+      }
+      if (id === 'main-challenge-grand-desc') {
+        document.getElementsByClassName("challenge-button")[2].classList.add("white")
       }
     }
 
     document.getElementById("challenge-primary-button");
-    toggleMainChallengeSelect('main-challenge-primary-desc', true)
+    toggleMainChallengeSelect('main-challenge-primary-desc')
 
     const _C = document.querySelector(".slider-container"),
       N = _C.children.length;

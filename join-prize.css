@@ -117,12 +117,16 @@
   }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 769px) {
+  .join-prize-items .prize-name br {
+    display: inline;
+  }
   .join-prize-items .row {
     width: 80%;
     margin: auto;
     max-width: 880px;
   }
+}
 
   .join-prize-items .prize-one {
     padding: 0 60px;
