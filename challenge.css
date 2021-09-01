@@ -236,7 +236,7 @@ img {
 @media (min-width: 768px) {
   .main-challenge-section {
     background-image: url(asset/main-challenge-bg-desktop.jpg);
-    padding-bottom: 280px;
+    padding-bottom: 20vw;
   }
 
   .mini-challenge-section {
@@ -246,7 +246,7 @@ img {
     padding-top: 20px;
     padding-bottom: 40px;
     min-height: auto;
-    background-position: bottom center;
+    margin-top: -2px;
   }
   .main-challenge-title {
     font-size: 36px;
@@ -278,7 +278,7 @@ img {
   }
 
   .jump-detail {
-    min-height: 550px;
+    min-height: 650px;
   }
 
   .jump-detail-img {
@@ -298,7 +298,7 @@ img {
   }
 
   .jump-detail .desc-info {
-    font-size: 14px;
+    font-size: 16px;
     width: 480px;
     margin: auto;
   }

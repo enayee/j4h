@@ -90,6 +90,18 @@
   .result-submit-leaderboard-section {
     background-position: center center;
     background-image: url(asset/main-result-submit-leaderboard-bg-desktop.jpg);
+    min-height: 34vw;
+  }
+
+  .submission-title {
+    margin-top: 3vw;
+  }
+
+  .leaderboard-title {
+    margin-top: 5vw;
+  }
+  .leaderboard-desc br {
+    display: inline;
   }
   .submit-button, .leaderboard-button {
     font-size: 24px;
@@ -97,5 +109,6 @@
     margin: 0 10px;
     padding: 12px;
     border-radius: 30px;
+    margin-bottom: 3vw;
   }
 }

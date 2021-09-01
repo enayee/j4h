@@ -5,6 +5,7 @@
   min-height: auto;
   padding-bottom: 80px;
   background-image: url(asset/main-step-participate-bg.png);
+  margin-top: -2px;
 }
 
 .step-participate-section .section-title {

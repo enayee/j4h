@@ -82,14 +82,16 @@
 
 @media (min-width: 768px) {
   .join-prize-section {
-    padding-top: 300px;
-    background-image: url(asset/main-join-prize-bg-desktop.png);
+    background-image: url(asset/main-join-prize-bg-desktop.jpg);
     margin-top: -2px;
+    padding-top: 14vw;
+    background-position: top center;
     padding-bottom: 240px;
+    min-height: 50vw;
   }
 
   .join-prize-container {
-    transform: translateY(-100px);
+    transform: none;
   }
 
   .join-prize-title {

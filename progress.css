@@ -84,6 +84,7 @@
     background-image: url(asset/main-progress-bg-desktop.jpg);
     padding-bottom: 20px;
     background-position: center center;
+    min-height: auto;
   }
 
   .progress-bird {

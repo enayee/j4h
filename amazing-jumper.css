@@ -1,9 +1,9 @@
 .amazing-jumper-section {
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   background-size: cover;
-  min-height: 1000px;
-  /* min-height: auto; */
+  /* min-height: 1000px; */
+  min-height: 400px;
   padding-bottom: 50px;
   padding-top: 120px;
   transform: translateY(-120px);
@@ -45,10 +45,11 @@
 @media (min-width: 768px) {
   .amazing-jumper-section {
     transform: none;
-    margin-bottom: 0px;
-    background-image: url(asset/main-amazing-jumper-bg-desktop.jpg);
+    margin-top: -5px;
+    /* background-image: url(asset/main-amazing-jumper-bg-desktop.jpg); */
     transform: none;
-    padding-top: 20px;
+    background-position: top center;
+    margin-bottom: 0;
   }
   .amazing-jumper-title {
     font-size: 36px;
