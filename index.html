@@ -367,7 +367,7 @@
       receive a specially designed e-cert for in<br>
       recognition of your stellar achievement!
     </p>
-    <div class="slider-wrapper">
+    <div class="slider-wrapper visible-xs">
       <div class="slider-container">
         <div class="slider-item">
           <div class="slider-item__title">SUPER JUMPER</div>
@@ -399,6 +399,50 @@
       <div class="slider-controls">
         <button class="control next active">•</button>
         <button class="control prev">•</button>
+      </div>
+    </div>
+
+    <div class="main-challenge-button-items hidden-xs">
+      <div class="row flex-nowrap">
+        <div class="challenge-button white col-6" id="challenge-super-button">
+          <button onclick="toggleMiniChallengeSelect('mini-challenge-super');">SUPER JUMPER</button>
+        </div>
+        <div class="challenge-button col-6" id="challenge-flash-button">
+          <button onclick="toggleMiniChallengeSelect('mini-challenge-flash');">FLASH JUMPER</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-challenge-jump-description hidden-xs">
+      <div class="jump-detail" id="mini-challenge-super">
+        <div class="jump-amount">SUPER JUMPER</div>
+        <div class="jump-detail-img">
+          <img src="asset/mini-flash-challenge.png" alt="mini-challenge-flash">
+          </div>
+        <p class="desc-info">
+          Be the top 10 jumpers to achieve the most<br>
+          jump count. Accumulate the jump counts<br>
+          over the contest period or do it in one go if<br>
+          you are up of it,<br><br>
+          Screenshot proof from your skipping app<br>
+          mush show the jump counts, duration and<br>
+          date.
+        </p>
+      </div>
+      <div class="jump-detail" id="mini-challenge-flash">
+        <div class="jump-amount">FLASH JUMPER</div>
+        <div class="jump-detail-img">
+          <img src="asset/mini-jumper-challenge.png" alt="mini-challenge-super">
+          </div>
+        <p class="desc-info">
+          Be the top 10 fastest to complete 500<br>
+          jump counts.<br>
+          See a new record today? Go ahead and<br>
+          beat it! Submit as many entries as you can.<br><br>
+          Screenshot proof from your skipping app<br>
+          mush show the jump count, duration and<br>
+          date.
+        </p>
       </div>
     </div>
 
@@ -663,8 +707,23 @@
       }
     }
 
+    function toggleMiniChallengeSelect(id) {
+      document.getElementById('mini-challenge-super').style.display = 'none';
+      document.getElementById('mini-challenge-flash').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+      if (id === 'mini-challenge-super') {
+        document.getElementById("challenge-super-button").classList.add("white")
+        document.getElementById("challenge-flash-button").classList.remove("white")
+      }
+      if (id === 'mini-challenge-flash') {
+        document.getElementById("challenge-flash-button").classList.add("white")
+        document.getElementById("challenge-super-button").classList.remove("white")
+      }
+    }
+
     document.getElementById("challenge-primary-button");
-    toggleMainChallengeSelect('main-challenge-primary-desc')
+    toggleMainChallengeSelect('main-challenge-primary-desc');
+    toggleMiniChallengeSelect('mini-challenge-super');
 
     const _C = document.querySelector(".slider-container"),
       N = _C.children.length;

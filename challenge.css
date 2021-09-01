@@ -55,6 +55,11 @@
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+.mini-challenge-section .challenge-button button {
+  background-color: #ECE500;
+  margin-bottom: 40px;
+}
+
 .challenge-button button:hover,
 .challenge-button button:focus,
 .challenge-button.white button {
@@ -262,6 +267,14 @@ img {
     width: 100%;
     margin: auto;
     max-width: 680px;
+  }
+
+  .mini-challenge-section .main-challenge-button-items .row {
+    width: 100%;
+    margin: auto;
+    max-width: 680px;
+    justify-content: center;
+    text-align: center;
   }
 
   .jump-detail {
