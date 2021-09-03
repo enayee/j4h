@@ -86,8 +86,30 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: 450px) and (max-width: 768px) {
+  .result-submit-leaderboard-section.submit {
+    background-position: bottom center;
+    min-height: 180vw;
+    padding-top: 13vw;
+    margin-top: -2px;
+  }
+
+  .result-submit-leaderboard-section.submit .section-desc {
+    font-size: 18px;
+  }
+
+  .submission-title {
+    margin-top: 15vw;
+  }
+
+  .leaderboard-title {
+    margin-top: 28vw;
+  }
+}
+
 @media (min-width: 768px) {
   .result-submit-leaderboard-section {
+    margin-top: -2px;
     background-position: center center;
     background-image: url(asset/main-result-submit-leaderboard-bg-desktop.jpg);
     min-height: 34vw;

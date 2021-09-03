@@ -42,6 +42,23 @@
   width: 160%;
 }
 
+@media (min-width: 450px) and (max-width: 768px) {
+  .amazing-jumper-section {
+    padding-bottom: 25vw;
+    padding-top: 20vw;
+    transform: translateY(-35vw);
+    margin-bottom: -35vw;
+  }
+
+  .amazing-jumper-button-items {
+    padding: 60px 0;
+    margin: 0;
+  }
+  .amazing-jumper-button-items .row {
+    width: 120%;
+  }
+}
+
 @media (min-width: 768px) {
   .amazing-jumper-section {
     transform: none;
@@ -52,17 +69,18 @@
   }
 
   .amazing-jumper-container {
-    margin-top: -10vw;
+    margin-top: -5vw;
   }
 
   .amazing-jumper-title {
     font-size: 36px;
   }
   .amazing-jumper-desc {
+    width: 90%;
     max-width: 880px;
     font-size: 24px;
-
   }
+
   .amazing-jumper-button-items {
     margin-top: 100px;
   }
@@ -73,12 +91,16 @@
   }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 1501px) {
   .amazing-jumper-section {
-    min-height: 50vw;
+    min-height: 80vw;
   }
 
   .amazing-jumper-container {
-    margin-top: -10vw;
+    margin-top: 4vw;
+  }
+
+  .amazing-jumper-button-items .row {
+    margin-top: 12vw;
   }
 }

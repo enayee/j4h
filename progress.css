@@ -79,6 +79,12 @@
   margin: 20px auto;
 }
 
+@media (min-width: 450px) and (max-width: 768px) {
+  .progress-banner {
+    padding-bottom: 32vw;
+  }
+}
+
 @media (min-width: 768px) {
   .progress-banner {
     background-image: url(asset/main-progress-bg-desktop.jpg);

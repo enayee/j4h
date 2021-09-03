@@ -70,6 +70,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 450px) and (max-width: 767px) {
+  .main-banner {
+    background-image: url(asset/main-banner-bg-desktop.jpg);
+  }
+}
+
 @media (min-width: 768px) {
   .main-banner {
     background-image: url(asset/main-banner-bg-desktop.jpg);
