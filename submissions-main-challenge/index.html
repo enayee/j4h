@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Jump 4 Happiness - Leaderboard - FLASH JUMPER CHALLENGE</title>
+  <title>Jump 4 Happiness - Submission - Main Challenge</title>
   <!-- Bootstrap core CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -16,6 +16,7 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="/nav.css">
   <link rel="stylesheet" href="/footer.css">
+  <link rel="stylesheet" href="/main-register.css">
   <style>
     @font-face {
       font-family: "gotham-medium";
@@ -36,7 +37,7 @@
       background-color: #EAE534;
     }
 
-    .leaderboard-wrapper {
+    .submission-wrapper {
       margin: auto;
       max-width: 1080px;
       font-family: "gotham-medium", sans-serif;
@@ -45,7 +46,7 @@
       padding: 0 5% 60px;
     }
 
-    .leaderboard-main-title {
+    .submission-main-title {
       color: #5A4A42;
       font-weight: 600;
       font-family: 'Philosopher', sans-serif;
@@ -55,15 +56,7 @@
       margin: 0;
     }
 
-    .leaderboard-sub-title {
-      font-size: 20px;
-      font-family: 'gotham-medium', sans-serif;
-      font-weight: 600;
-      color: #5A4A42;
-      text-align: center;
-    }
-
-    .leaderboard-description {
+    .submission-description {
       font-size: 18px;
       font-family: 'gotham-medium', sans-serif;
       font-weight: normal;
@@ -74,47 +67,52 @@
       margin-top: 20px;
     }
 
-    .leaderboard-list {
-      margin-top: 60px;
+    input[type="radio"]{
+      visibility: hidden;
+      height: 0;
+      width: 0;
     }
-
-    .leaderboard-info {
-      font-family: sans-serif;
+    .challenge-option-container {
+      width: 100%;
       display: flex;
       align-items: center;
-      width: 100%;
-      background-color: #5A4A42;
-      padding: 8px;
-      color: #FFFFFF;
-      margin-bottom: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
     }
 
-    .leaderboard-info__rank {
-      font-size: 32px;
-      opacity: 0.5;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
-
-    .leaderboard-info__name {
-      font-family: 'gotham-medium', sans-serif;
+    .challenge-option {
       font-size: 20px;
-      margin-left: 20px;
-      margin-block-start: 0;
-      margin-block-end: 0;
+      text-align: center;
+      cursor: pointer;
+      padding: 4px 24px;
+      border-radius: 8px;
+      margin: 10px 20px !important;
+      white-space: nowrap;
+      width: 260px;
+      border: 2px solid transparent;
+    }
+    input[type="radio"]:checked + .challenge-option {
+      border: 2px solid #000000;
     }
 
-    .leaderboard-info__count {
-      font-family: 'gotham-medium', sans-serif;
-      font-size: 20px;
-      margin-left: auto;
-      margin-right: 16px;
-      margin-block-start: 0;
-      margin-block-end: 0;
-    }
     @media (min-width: 768px) {
-      .leaderboard-wrapper {
+      .submission-wrapper {
         padding-top: 60px;
+      }
+      .submission-main-title {
+        font-size: 36px;
+      }
+      .submission-description {
+        font-size: 24px;
+        width: 80%;
+        max-width: 880px;
+        margin: auto;
+      }
+    }
+    @media (min-width: 1280px) {
+      .register-form-wrapper {
+        max-width: none !important;
       }
     }
   </style>
@@ -176,63 +174,35 @@
     </div>
   </div>
   <!-- Main  -->
-  <section class="leaderboard-wrapper">
-    <h1 class="leaderboard-main-title">LEADERBOARD</h1>
-    <div>
-      <h2 class="leaderboard-sub-title">FLASH JUMPER CHALLENGE</h2>
-      <h3 class="leaderboard-description">Be the top 10 fastest to complete 500 jump counts.</h3>
-      <div class="leaderboard-list">
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">01</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">02</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">03</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">04</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">05</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">06</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">07</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">08</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">09</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
-        <div class="leaderboard-info">
-          <div class="leaderboard-info__rank">10</div>
-          <p class="leaderboard-info__name">Anonymous</p>
-          <p class="leaderboard-info__count">NA</p>
-        </div>
+  <section class="submission-wrapper">
+    <h1 class="submission-main-title">SUBMISSIONS</h1>
+    <h3 class="submission-description">Kindly Submit your result here. Multiple result submission are not acceptable for main challenge.</h3>
+    <div class="register-form-wrapper">
+      <div class="challenge-option-container">
+        <input type="radio" name="main-challenge" id="main-challenge_primary" />
+        <label class="challenge-option" style="background-color: #F89A9A" for="main-challenge_primary">PRIMARY JUMP</label>
+        <input type="radio" name="main-challenge" id="main-challenge_secondary" />
+        <label class="challenge-option" style="background-color: #C2F6E9" for="main-challenge_secondary">SECONDARY JUMP</label>
+        <input type="radio" name="main-challenge" id="main-challenge_grand" />
+        <label class="challenge-option" style="background-color: #EFC9FF" for="main-challenge_grand">GRAND JUMP</label>
       </div>
+      <form action="" method="post">
+        <label>Name:</label>
+        <input type="text" tabindex="1" required>
+        <label>Ticket No (from confirmation email):</label>
+        <input type="text" tabindex="2" required>
+        <label>Total Jump Count:</label>
+        <input type="text" tabindex="3" required>
+        <div class="upload-file-container">
+          <label class="upload-file-title">Upload your screenshot of result</label>
+          <button class="upload-file-button" onclick="document.getElementById('uploadFile').click()">Upload File</button>
+          <input type="file" id="uploadFile" style="display:none"> 
+        </div>
+
+        <div class="register-button">
+          <button name="submit" type="submit">SUBMIT</button>
+        </div>
+      </form>
     </div>
   </section>
   <!-- Footer -->

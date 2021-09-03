@@ -45,7 +45,8 @@
 
 .register-form-wrapper input[type="text"],
 .register-form-wrapper input[type="email"],
-.register-form-wrapper input[type="tel"] {
+.register-form-wrapper input[type="tel"],
+.register-form-wrapper input[type="number"] {
   width: 100%;
   border: 1px solid #ccc;
   background: #FFF;
@@ -57,7 +58,8 @@
 
 .register-form-wrapper input[type="text"]:hover,
 .register-form-wrapper input[type="email"]:hover,
-.register-form-wrapper input[type="tel"]:hover {
+.register-form-wrapper input[type="tel"]:hover,
+.register-form-wrapper input[type="number"]:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
@@ -92,6 +94,33 @@
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+.upload-file-container {
+  margin-top: 20px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+label.upload-file-title {
+  font-family: "gotham-light", sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+.upload-file-button {
+  text-align: center;
+  font-family: "gotham-medium", sans-serif;
+  font-size: 12px;
+  width: 120px;
+  color: #5A4A42;
+  background-color: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 1280px) {
   .register-section {
     background-position: top center;
@@ -107,13 +136,18 @@
     font-size: 20px;
   }
 
+  label.upload-file-title {
+    font-size: 12px;
+  }
+
   .tnc-checkbox-label {
     font-size: 12px !important;
   }
 
   .register-form-wrapper input[type="text"],
   .register-form-wrapper input[type="email"],
-  .register-form-wrapper input[type="tel"] {
+  .register-form-wrapper input[type="tel"],
+  .register-form-wrapper input[type="number"] {
     padding: 12px;
   }
 
