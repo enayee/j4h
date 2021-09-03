@@ -46,10 +46,9 @@
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .challenge-button {
@@ -216,11 +215,6 @@
   box-shadow: transparent;
 }
 
-.slider-item {
-  width: 95%;
-  margin: 0 2.5%;
-}
-
 .slider-container {
   display: flex;
   align-items: center;
@@ -228,26 +222,6 @@
   width: 200%;
   width: calc(var(--n)*100%);
   transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
-}
-
-.slider-item__title {
-  margin: auto;
-  margin-top: 24px;
-  font-family: "gotham-bold", sans-serif;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #5A4A42;
-  font-size: 16px;
-}
-
-.slider-item__desc {
-  margin: auto;
-  margin-top: 20px;
-  font-family: "gotham-medium", sans-serif;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #5A4A42;
-  font-size: 14px;
 }
 
 .smooth {
@@ -368,13 +342,6 @@ img {
   .slider-container {
     max-width: 880px;
     margin: auto;
-  }
-  .slider-item__title {
-    font-size: 24px;
-    margin-top: 40px;
-  }
-  .slider-item__desc {
-    font-size: 18px;
   }
   .slider-wrapper {
     padding-bottom: 100px;

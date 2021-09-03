@@ -369,40 +369,6 @@
       receive a specially designed e-cert for in<br>
       recognition of your stellar achievement!
     </p>
-    <!-- <div class="slider-wrapper visible-xs">
-      <div class="slider-container">
-        <div class="slider-item">
-          <div class="slider-item__title">SUPER JUMPER</div>
-          <img src="asset/mini-flash-challenge.png">
-          <p class="slider-item__desc">
-            Be the top 10 jumpers to achieve the most<br>
-            jump count. Accumulate the jump counts<br>
-            over the contest period or do it in one go if<br>
-            you are up of it,<br><br>
-            Screenshot proof from your skipping app<br>
-            mush show the jump counts, duration and<br>
-            date.
-          </p>
-        </div>
-        <div class="slider-item">
-          <div class="slider-item__title">FLASH JUMPER</div>
-          <img src="asset/mini-jumper-challenge.png">
-          <p class="slider-item__desc">
-            Be the top 10 fastest to complete 500<br>
-            jump counts.<br>
-            See a new record today? Go ahead and<br>
-            beat it! Submit as many entries as you can.<br><br>
-            Screenshot proof from your skipping app<br>
-            mush show the jump count, duration and<br>
-            date.
-          </p>
-        </div>
-      </div>
-      <div class="slider-controls">
-        <button class="control next active">•</button>
-        <button class="control prev">•</button>
-      </div>
-    </div> -->
 
     <div class="main-challenge-button-items">
       <div class="row flex-nowrap">
@@ -743,89 +709,6 @@
     toggleMiniChallengeSelect('mini-challenge-super');
 
 
-
-    // const _C = document.querySelector(".slider-container"),
-    //   N = _C.children.length;
-
-    // _C.style.setProperty("--n", N);
-    // let x0 = null;
-    // let locked = false;
-
-    // function lock(e) {
-    //   x0 = unify(e).clientX;
-    //   _C.classList.toggle("smooth", !(locked = true));
-    // }
-
-    // let i = 0;
-    // let w;
-
-    // function size() {
-    //   w = window.innerWidth;
-    // }
-
-    // function move(e) {
-    //   if (locked) {
-    //     let dx = unify(e).clientX - x0,
-    //       s = Math.sign(dx),
-    //       f = +(s * dx / w).toFixed(2);
-
-    //     if ((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > 0.2) {
-    //       _C.style.setProperty("--i", (i -= s));
-    //       f = 1 - f;
-    //     }
-
-    //     _C.style.setProperty("--tx", "0px");
-    //     _C.style.setProperty("--f", f);
-    //     _C.classList.toggle("smooth", !(locked = false));
-    //     x0 = null;
-    //   }
-    // }
-
-    // size();
-
-    // addEventListener("resize", size, false);
-
-    // function drag(e) {
-    //   e.preventDefault();
-
-    //   if (locked) {
-    //     _C.style.setProperty("--tx", `${Math.round(unify(e).clientX - x0)}px`);
-    //   }
-    // }
-    // let prev = document.querySelector(".prev");
-    // let next = document.querySelector(".next");
-
-    // prev.addEventListener("click", () => {
-    //   if (i == 0) {} else if (i > 0) {
-    //     _C.style.setProperty("--i", i--);
-    //   }
-    // });
-
-    // next.addEventListener("click", () => {
-    //   if (i < N) {
-    //     _C.style.setProperty("--i", i++);
-    //   }
-    // });
-
-    // _C.addEventListener("mousemove", drag, false);
-    // _C.addEventListener("touchmove", drag, false);
-
-    // _C.addEventListener("mousedown", lock, false);
-    // _C.addEventListener("touchstart", lock, false);
-
-    // _C.addEventListener("mouseup", move, false);
-    // _C.addEventListener("touchend", move, false);
-    // _C.addEventListener(
-    //   "touchmove",
-    //   e => {
-    //     e.preventDefault();
-    //   },
-    //   false
-    // );
-
-    // function unify(e) {
-    //   return e.changedTouches ? e.changedTouches[0] : e;
-    // }
   </script>
 </body>
 
