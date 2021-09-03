@@ -3,10 +3,11 @@
   background-position: bottom center;
   background-size: cover;
   min-height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   padding-top: 20px;
   margin-top: -80px;
   background-image: url(asset/main-challenge-bg.png);
+  position: relative;
 }
 
 .main-challenge-title {
@@ -37,6 +38,18 @@
 
 .main-challenge-button-items .row {
   width: 160%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main-challenge-button-items::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .challenge-button {
@@ -60,7 +73,6 @@
   margin-bottom: 40px;
 }
 
-.challenge-button button:hover,
 .challenge-button button:focus,
 .challenge-button.white button {
   outline: none;
@@ -109,8 +121,8 @@
 }
 
 .jump-detail .desc-info {
-  font-size: 8px;
-  width: 240px;
+  font-size: 10px;
+  width: 288px;
   margin: auto;
 }
 
@@ -126,6 +138,10 @@
   margin-bottom: -140px;
   position: relative;
   background-image: url(asset/mini-challenge-bg.png);
+}
+
+.mini-challenge-section .main-challenge-button-items .row {
+  width: 120%;
 }
 
 .mini-challenge-title {
@@ -152,13 +168,14 @@
 
 .slider-controls {
   position: absolute;
-  bottom: -3px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   height: 10px;
   color: #fff;
   font-size: 30px;
   line-height: 5px;
+  z-index: 101;
 }
 
 .prev,
@@ -178,13 +195,18 @@
   box-shadow: transparent;
   border: none;
   padding: 0;
+  z-index: 101;
+}
+
+.prev.active,
+.next.active {
+  opacity: 1;
 }
 
 .prev:hover,
 .next:hover,
 .prev:focus,
 .next:focus {
-  opacity: 1;
   outline: none;
   background-color: transparent;
   box-shadow: transparent;
@@ -243,10 +265,10 @@ img {
     background-image: url(asset/mini-challenge-bg-desktop.jpg);
     transform: none;
     margin-bottom: 0;
-    padding-top: 20px;
+    padding-top: 20vw;
     padding-bottom: 40px;
     min-height: auto;
-    margin-top: -2px;
+    margin-top: -8vw;
   }
   .main-challenge-title {
     font-size: 36px;
@@ -306,6 +328,14 @@ img {
   .mini-challenge-title {
     margin-top: -120px;
   }
+
+  .slider-controls {
+    bottom: 0;
+    top: 750px;
+  }
+  .mini-challenge-section .slider-controls {
+    top: 550px;
+  }
 }
 
 @media (min-width: 1020px) {
@@ -319,9 +349,6 @@ img {
   }
   .slider-item__desc {
     font-size: 18px;
-  }
-  .slider-controls {
-    display: none;
   }
   .slider-wrapper {
     padding-bottom: 100px;

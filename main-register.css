@@ -39,6 +39,10 @@
   margin-left: 5px !important;
 }
 
+.tnc-checkbox-label u {
+  cursor: pointer;
+}
+
 .register-form-wrapper input[type="text"],
 .register-form-wrapper input[type="email"],
 .register-form-wrapper input[type="tel"] {

@@ -12,7 +12,7 @@
   padding-top: 8px;
 }
 
-.main-logo img{
+.main-logo img {
   width: 100%;
 }
 
@@ -79,6 +79,12 @@
     min-height: 1000px;
     background-position: bottom center;
   }
+  .main-logo {
+    width: 200px;
+  }
+  .main-banner-large-title {
+    font-size: 100px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -87,7 +93,7 @@
   }
   .main-banner-desc {
     width: 80%;
-    max-width: 880px;
+    max-width: 800px;
     margin: 20px auto;
   }
 }

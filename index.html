@@ -185,8 +185,8 @@
     </div>
     <p class="main-banner-desc">
       Join our Jump For Happiness<br>
-      event from 16th September - 16th October<br>
-      and stand a chance to win<br>
+      event from 16th September - 16th<br>
+      October and stand a chance to win<br>
       our amazing luckydraw<br>
       prizes now!
     </p>
@@ -305,17 +305,14 @@
     </p>
     <div class="main-challenge-button-items">
       <div class="row flex-nowrap">
-        <div class="challenge-button white col-4">
-          <button id="challenge-primary-button"
-            onclick="toggleMainChallengeSelect('main-challenge-primary-desc');">PRIMARY JUMP</button>
+        <div class="challenge-button col-4" id="challenge-primary-button">
+          <button onclick="toggleMainChallengeSelect('main-challenge-primary-desc');">PRIMARY JUMP</button>
         </div>
-        <div class="challenge-button col-4">
-          <button id="challenge-secondary-button"
-            onclick="toggleMainChallengeSelect('main-challenge-secondary-desc');">SECONDARY JUMP</button>
+        <div class="challenge-button col-4" id="challenge-secondary-button">
+          <button onclick="toggleMainChallengeSelect('main-challenge-secondary-desc');">SECONDARY JUMP</button>
         </div>
-        <div class="challenge-button col-4">
-          <button id="challenge-grand-button" onclick="toggleMainChallengeSelect('main-challenge-grand-desc');">GRAND
-            JUMP</button>
+        <div class="challenge-button col-4" id="challenge-grand-button">
+          <button onclick="toggleMainChallengeSelect('main-challenge-grand-desc');">GRAND JUMP</button>
         </div>
       </div>
     </div>
@@ -355,6 +352,11 @@
         <div class="desc-title">Suprising Deals</div>
       </div>
     </div>
+    <div class="slider-controls">
+      <button class="control next active" id="main-button-primary" onclick="toggleMainChallengeSelect('main-challenge-primary-desc');">•</button>
+      <button class="control next" id="main-button-secondary" onclick="toggleMainChallengeSelect('main-challenge-secondary-desc');">•</button>
+      <button class="control next" id="main-button-grand" onclick="toggleMainChallengeSelect('main-challenge-grand-desc');">•</button>
+    </div>
 
   </section>
   <!-- Mini Challenge -->
@@ -367,7 +369,7 @@
       receive a specially designed e-cert for in<br>
       recognition of your stellar achievement!
     </p>
-    <div class="slider-wrapper visible-xs">
+    <!-- <div class="slider-wrapper visible-xs">
       <div class="slider-container">
         <div class="slider-item">
           <div class="slider-item__title">SUPER JUMPER</div>
@@ -400,9 +402,9 @@
         <button class="control next active">•</button>
         <button class="control prev">•</button>
       </div>
-    </div>
+    </div> -->
 
-    <div class="main-challenge-button-items hidden-xs">
+    <div class="main-challenge-button-items">
       <div class="row flex-nowrap">
         <div class="challenge-button white col-6" id="challenge-super-button">
           <button onclick="toggleMiniChallengeSelect('mini-challenge-super');">SUPER JUMPER</button>
@@ -413,7 +415,7 @@
       </div>
     </div>
 
-    <div class="main-challenge-jump-description hidden-xs">
+    <div class="main-challenge-jump-description">
       <div class="jump-detail" id="mini-challenge-super">
         <div class="jump-amount">SUPER JUMPER</div>
         <div class="jump-detail-img">
@@ -444,31 +446,37 @@
           date.
         </p>
       </div>
+      <div class="slider-controls">
+        <button class="control next active" id="mini-button-super" onclick="toggleMiniChallengeSelect('mini-challenge-super');">•</button>
+        <button class="control prev" id="mini-button-flash" onclick="toggleMiniChallengeSelect('mini-challenge-flash');">•</button>
+      </div>
     </div>
 
   </section>
   <!-- Amazing Jumper -->
   <section id="amazing-jumper" class="amazing-jumper-section">
-    <div class="amazing-jumper-title">
-      OUR AMAZING JUMPER!
-    </div>
-    <!-- <p class="amazing-jumper-desc">
-      A big congratulations to our shortlisted<br>
-      jumpers who have achieved at least 500<br>
-      jumps and won our special prizes!
-    </p> -->
-
-    <p class="amazing-jumper-desc">
-      Join our Jump For Happiness<br>
-      contest to win prizes and get<br>
-      featured on our landing page!
-    </p>
-
-    <!-- <div class="amazing-jumper-button-items">
-      <div class="row flex-nowrap" width="120%">
-        <img src="asset/main-amazing-jumper-bg-place-holde.png" alt="amazing-jumper">
+    <div class="amazing-jumper-container">
+      <div class="amazing-jumper-title">
+        OUR AMAZING JUMPER!
       </div>
-    </div> -->
+      <!-- <p class="amazing-jumper-desc">
+        A big congratulations to our shortlisted<br>
+        jumpers who have achieved at least 500<br>
+        jumps and won our special prizes!
+      </p> -->
+
+      <p class="amazing-jumper-desc">
+        Join our Jump For Happiness<br>
+        contest to win prizes and get<br>
+        featured on our landing page!
+      </p>
+
+      <div class="amazing-jumper-button-items">
+        <div class="row flex-nowrap" width="120%">
+          <img src="asset/main-amazing-jumper-bg-place-holde.png" alt="amazing-jumper">
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Result Submit & Leaderboard -->
   <section id="result-submit-leaderboard" class="result-submit-leaderboard-section submit">
@@ -612,7 +620,7 @@
         <input type="tel" tabindex="3" required>
         <div class="register-tnc-container d-flex align-items-start">
           <input type="checkbox" id="tnc">
-          <label for="tnc" class="tnc-checkbox-label">I have read and agreed to abide by the Terms & Conditions of the
+          <label for="tnc" class="tnc-checkbox-label">I have read and agreed to abide by the <u onclick="window.open('/term-and-condition/','_blank')">Terms & Conditions</u> of the
             Jump For Happiness 2021 event.</label>
         </div>
         <div class="register-button">
@@ -691,19 +699,24 @@
       document.getElementById('main-challenge-secondary-desc').style.display = 'none';
       document.getElementById('main-challenge-grand-desc').style.display = 'none';
       document.getElementById(id).style.display = 'block';
-      for ( var i in document.getElementsByClassName("challenge-button")) {
-        if (document.getElementsByClassName("challenge-button")[i].classList) {
-          document.getElementsByClassName("challenge-button")[i].classList.remove("white");
-        }
-      }
+      document.getElementById("main-button-primary").classList.remove("active");
+      document.getElementById("main-button-secondary").classList.remove("active");
+      document.getElementById("main-button-grand").classList.remove("active");
+
+      document.getElementById("challenge-primary-button").classList.remove("white");
+      document.getElementById("challenge-secondary-button").classList.remove("white");
+      document.getElementById("challenge-grand-button").classList.remove("white");
       if (id === 'main-challenge-primary-desc') {
-        document.getElementsByClassName("challenge-button")[0].classList.add("white")
+        document.getElementById("challenge-primary-button").classList.add("white");
+        document.getElementById("main-button-primary").classList.add("active");
       }
       if (id === 'main-challenge-secondary-desc') {
-        document.getElementsByClassName("challenge-button")[1].classList.add("white")
+        document.getElementById("challenge-secondary-button").classList.add("white");
+        document.getElementById("main-button-secondary").classList.add("active");
       }
       if (id === 'main-challenge-grand-desc') {
-        document.getElementsByClassName("challenge-button")[2].classList.add("white")
+        document.getElementById("challenge-grand-button").classList.add("white");
+        document.getElementById("main-button-grand").classList.add("active");
       }
     }
 
@@ -714,10 +727,14 @@
       if (id === 'mini-challenge-super') {
         document.getElementById("challenge-super-button").classList.add("white")
         document.getElementById("challenge-flash-button").classList.remove("white")
+        document.getElementById("mini-button-super").classList.add("active");
+        document.getElementById("mini-button-flash").classList.remove("active");
       }
       if (id === 'mini-challenge-flash') {
         document.getElementById("challenge-flash-button").classList.add("white")
         document.getElementById("challenge-super-button").classList.remove("white")
+        document.getElementById("mini-button-flash").classList.add("active");
+        document.getElementById("mini-button-super").classList.remove("active");
       }
     }
 
@@ -725,90 +742,90 @@
     toggleMainChallengeSelect('main-challenge-primary-desc');
     toggleMiniChallengeSelect('mini-challenge-super');
 
-    const _C = document.querySelector(".slider-container"),
-      N = _C.children.length;
 
 
+    // const _C = document.querySelector(".slider-container"),
+    //   N = _C.children.length;
 
-    _C.style.setProperty("--n", N);
-    let x0 = null;
-    let locked = false;
+    // _C.style.setProperty("--n", N);
+    // let x0 = null;
+    // let locked = false;
 
-    function lock(e) {
-      x0 = unify(e).clientX;
-      _C.classList.toggle("smooth", !(locked = true));
-    }
+    // function lock(e) {
+    //   x0 = unify(e).clientX;
+    //   _C.classList.toggle("smooth", !(locked = true));
+    // }
 
-    let i = 0;
-    let w;
+    // let i = 0;
+    // let w;
 
-    function size() {
-      w = window.innerWidth;
-    }
+    // function size() {
+    //   w = window.innerWidth;
+    // }
 
-    function move(e) {
-      if (locked) {
-        let dx = unify(e).clientX - x0,
-          s = Math.sign(dx),
-          f = +(s * dx / w).toFixed(2);
+    // function move(e) {
+    //   if (locked) {
+    //     let dx = unify(e).clientX - x0,
+    //       s = Math.sign(dx),
+    //       f = +(s * dx / w).toFixed(2);
 
-        if ((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > 0.2) {
-          _C.style.setProperty("--i", (i -= s));
-          f = 1 - f;
-        }
+    //     if ((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > 0.2) {
+    //       _C.style.setProperty("--i", (i -= s));
+    //       f = 1 - f;
+    //     }
 
-        _C.style.setProperty("--tx", "0px");
-        _C.style.setProperty("--f", f);
-        _C.classList.toggle("smooth", !(locked = false));
-        x0 = null;
-      }
-    }
+    //     _C.style.setProperty("--tx", "0px");
+    //     _C.style.setProperty("--f", f);
+    //     _C.classList.toggle("smooth", !(locked = false));
+    //     x0 = null;
+    //   }
+    // }
 
-    size();
+    // size();
 
-    addEventListener("resize", size, false);
+    // addEventListener("resize", size, false);
 
-    function drag(e) {
-      e.preventDefault();
+    // function drag(e) {
+    //   e.preventDefault();
 
-      if (locked) {
-        _C.style.setProperty("--tx", `${Math.round(unify(e).clientX - x0)}px`);
-      }
-    }
-    let prev = document.querySelector(".prev");
-    let next = document.querySelector(".next");
+    //   if (locked) {
+    //     _C.style.setProperty("--tx", `${Math.round(unify(e).clientX - x0)}px`);
+    //   }
+    // }
+    // let prev = document.querySelector(".prev");
+    // let next = document.querySelector(".next");
 
-    prev.addEventListener("click", () => {
-      if (i == 0) {} else if (i > 0) {
-        _C.style.setProperty("--i", i--);
-      }
-    });
+    // prev.addEventListener("click", () => {
+    //   if (i == 0) {} else if (i > 0) {
+    //     _C.style.setProperty("--i", i--);
+    //   }
+    // });
 
-    next.addEventListener("click", () => {
-      if (i < N) {
-        _C.style.setProperty("--i", i++);
-      }
-    });
+    // next.addEventListener("click", () => {
+    //   if (i < N) {
+    //     _C.style.setProperty("--i", i++);
+    //   }
+    // });
 
-    _C.addEventListener("mousemove", drag, false);
-    _C.addEventListener("touchmove", drag, false);
+    // _C.addEventListener("mousemove", drag, false);
+    // _C.addEventListener("touchmove", drag, false);
 
-    _C.addEventListener("mousedown", lock, false);
-    _C.addEventListener("touchstart", lock, false);
+    // _C.addEventListener("mousedown", lock, false);
+    // _C.addEventListener("touchstart", lock, false);
 
-    _C.addEventListener("mouseup", move, false);
-    _C.addEventListener("touchend", move, false);
-    _C.addEventListener(
-      "touchmove",
-      e => {
-        e.preventDefault();
-      },
-      false
-    );
+    // _C.addEventListener("mouseup", move, false);
+    // _C.addEventListener("touchend", move, false);
+    // _C.addEventListener(
+    //   "touchmove",
+    //   e => {
+    //     e.preventDefault();
+    //   },
+    //   false
+    // );
 
-    function unify(e) {
-      return e.changedTouches ? e.changedTouches[0] : e;
-    }
+    // function unify(e) {
+    //   return e.changedTouches ? e.changedTouches[0] : e;
+    // }
   </script>
 </body>
 
