@@ -4,6 +4,7 @@
   background-size: cover;
   min-height: 800px;
   background-image: url(asset/main-banner-bg.png);
+  text-align:center;
 }
 
 .main-logo {
@@ -23,7 +24,23 @@
   font-size: 120px;
   line-height: 90px;
   font-weight: bold;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  position: relative;
+  display: inline-block;
+}
+
+.banner-jumping-1 {
+  position: absolute;
+  width: 100px;
+  right: -55px;
+  top: 22px;
+}
+
+.banner-jumping-2 {
+  position: absolute;
+  width: 100px;
+  left: -60px;
+  top: 110px;
 }
 
 .main-banner-title {
@@ -52,6 +69,11 @@
   color: #5A4A42;
   font-size: 18px;
 }
+
+.main-banner-desc-container {
+  position: relative;
+}
+
 
 .main-register-button {
   font-family: "gotham-bold", serif;
@@ -91,6 +113,18 @@
   .main-banner-large-title {
     font-size: 100px;
   }
+
+  .banner-jumping-1 {
+    width: 130px;
+    right: -180px;
+    top: -50px;
+  }
+  
+  .banner-jumping-2 {
+    width: 140px;
+    left: -160px;
+    top: 110px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -101,6 +135,11 @@
     width: 80%;
     max-width: 800px;
     margin: 20px auto;
+  }
+  
+  .banner-jumping-2 {
+    left: -200px;
+    top: 40px;
   }
 }
 
