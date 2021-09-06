@@ -300,7 +300,7 @@ img {
   }
 
   .jump-detail {
-    min-height: 650px;
+    min-height: 700px;
   }
 
   .jump-detail-img {
@@ -331,10 +331,7 @@ img {
 
   .slider-controls {
     bottom: 0;
-    top: 750px;
-  }
-  .mini-challenge-section .slider-controls {
-    top: 550px;
+    top: 800px;
   }
 }
 
