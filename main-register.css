@@ -126,6 +126,7 @@ label.upload-file-title {
     background-position: top center;
     background-image: url(asset/main-register-bg-desktop.jpg);
     margin: auto;
+    padding-top: 50px;
   }
 
   .register-form-wrapper {
