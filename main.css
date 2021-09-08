@@ -5,6 +5,8 @@
   min-height: 800px;
   background-image: url(asset/main-banner-bg.png);
   text-align:center;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .main-logo {
@@ -27,6 +29,7 @@
   margin: 20px auto 0;
   position: relative;
   display: inline-block;
+  max-width: 100vh;
 }
 
 .banner-jumping-1 {
@@ -133,7 +136,7 @@
   }
   .main-banner-desc {
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
   }
   

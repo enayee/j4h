@@ -37,18 +37,14 @@
 }
 
 .main-challenge-button-items .row {
-  width: 160%;
+  width: 140vw;
+  min-width: 560px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 .main-challenge-button-items::-webkit-scrollbar {
   display: none;
-}
-
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .challenge-button {
@@ -141,10 +137,15 @@
 
 .mini-challenge-section .main-challenge-button-items .row {
   width: 120%;
+  min-width: 360px;
 }
 
 .mini-challenge-title {
   margin-top: 150px;
+}
+
+.mini-challenge-jump-description {
+  position: relative;  
 }
 
 .main-challenge-desc {
@@ -170,15 +171,16 @@
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-  height: 10px;
+  height: 20px;
   color: #fff;
   font-size: 30px;
-  line-height: 5px;
+  line-height: 20px;
   z-index: 101;
 }
 
 .mini-challenge-section .slider-controls {
-  bottom: 150px;
+  top: 350px;
+  bottom: 0px;
 }
 
 .prev,
@@ -246,12 +248,33 @@ img {
   .slider-controls {
     bottom: 160px;
   }
+
+  .mini-challenge-section .main-challenge-button-items .row {
+    width: 80%;
+  }
+
+  .mini-challenge-section .slider-controls {
+    bottom: 0px;
+    top: 450px;
+  }
   .jump-detail-img {
     width: 360px;
     margin: 12px auto;
   }
   .jump-detail .desc-info {
     font-size: 12px;
+  }
+  .mini-challenge-section .main-challenge-button-items .row {
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 550px) {
+  .main-challenge-button-items .row {
+    width: 100%;
+    margin: auto;
+    max-width: 680px;
   }
 }
 
@@ -292,7 +315,7 @@ img {
   }
 
   .mini-challenge-section .main-challenge-button-items .row {
-    width: 100%;
+    width: 50%;
     margin: auto;
     max-width: 680px;
     justify-content: center;
@@ -317,6 +340,11 @@ img {
 
   .jump-detail .desc-title {
     font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .jump-detail .desc-title br {
+    display: inline;
   }
 
   .jump-detail .desc-info {
@@ -332,6 +360,10 @@ img {
   .slider-controls {
     bottom: 0;
     top: 800px;
+  }
+
+  .mini-challenge-section .slider-controls {
+    top: 550px;
   }
 }
 

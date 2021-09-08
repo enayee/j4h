@@ -67,6 +67,8 @@ a:active {
 
 .toggle-menu img {
   width: 16px;
+  margin-left: 1px;
+  margin-bottom: 2px;
 }
 
 .nav-register-button {

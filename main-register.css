@@ -23,7 +23,6 @@
   margin: auto;
   font-family: "gotham-medium", sans-serif;
   letter-spacing: 0px;
-  text-align: center;
   color: #5A4A42;
   font-size: 14px;
   margin-top: 10px;
@@ -54,6 +53,7 @@
   padding: 8px;
   color: #000000;
   font-size: 16px;
+  text-align: left;
 }
 
 .register-form-wrapper input[type="text"]:hover,
@@ -107,6 +107,7 @@ label.upload-file-title {
   font-family: "gotham-light", sans-serif;
   font-size: 10px;
   text-align: center;
+  margin-left: 0;
 }
 .upload-file-button {
   text-align: center;
