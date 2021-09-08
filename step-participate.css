@@ -37,6 +37,19 @@
 .step-item__image {
   width: 90px;
   margin: auto;
+  min-height: 120px;
+}
+
+.step-item__image.multi-image {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multi-image img {
+  width: 90px;
+  padding: 30px;
 }
 
 .step-item__image img {

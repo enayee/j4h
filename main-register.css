@@ -122,6 +122,18 @@ label.upload-file-title {
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+.back-button {
+  cursor: pointer;
+  font-family: "gotham-medium", sans-serif;
+  font-size: 14px;
+  color: #5A4A42;
+}
+
+.back-button img {
+  transform: rotate(180deg);
+  width: 14px;
+  margin-right: 10px;
+}
 @media (min-width: 1280px) {
   .register-section {
     background-position: top center;
